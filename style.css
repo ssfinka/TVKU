@@ -73,7 +73,7 @@
   line-height: 20px;
   letter-spacing: 0;
   text-transform: none;
-  width: 100%;
-  max-width: 100%;
-  min-height: auto;
+  margin-top: 0;
+  text-align: left;
+  margin-bottom: 0;
 }
