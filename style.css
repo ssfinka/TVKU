@@ -63,3 +63,17 @@
   text-align: left;
   margin-bottom: 0;
 }
+
+.login-text2 {
+  color: #667085;
+  font-size: 14px;
+  font-style: normal;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0;
+  text-transform: none;
+  width: 100%;
+  max-width: 100%;
+  min-height: auto;
+}
