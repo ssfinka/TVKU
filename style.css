@@ -37,17 +37,48 @@ body{
 }
 
 h2{
-    color: rgb(36, 36, 220);
+    color: #1849a9;
+    font-size: 18px;
+    font-style: normal;
+    font-family: "Inter",sans-serif;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: 0;
+    text-transform: none;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 0;
+    min-height: auto;
+    text-align: left;
+    margin-bottom: 0;
 }
 
 p{
-    font-size: 15px;
-    color: rgb(124, 124, 124);
+    color: #667085;
+    font-size: 14px;
+    font-style: normal;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0;
+    text-transform: none;
+    margin-top: 0;
+    text-align: left;
+    margin-bottom: 0;
 }
 
 h5{
-    padding-top: 7px;
-    color: rgb(88, 86, 86);
+    margin-top: 8px;
+    text-align: left;
+    margin-bottom: 0;
+    color: #344054;
+    font-size: 14px;
+    font-style: normal;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0;
+    text-transform: none;
 }
 
 .form input{
@@ -76,13 +107,59 @@ h5{
 }
 
 .button{
+    gap: 8px;
+    display: flex;
+    padding: 12px 20px;
+    overflow: hidden;
+    position: relative;
+    border-top: 1px solid #1849a9;
+    box-shadow: 0 1px 2px 0 rgba(16,24,40,.05);
+    align-items: center;
+    border-left: 1px solid #1849a9;
+    border-right: 1px solid #1849a9;
+    border-bottom: 1px solid #1849a9;
+    justify-content: center;
+    background-color: #1849a9;
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Inter",sans-serif;
     color: white;
-    background: rgb(20, 20, 135);
-    font-size: 1.2rem;
-    font-weight: 500;
-    letter-spacing: 1px;
-    line-height: 5px;
-    margin-top: 10px;
-    cursor: pointer;
-    transition: 0.3s;
+}
+
+.placeholder{
+    margin-top: 0;
+    text-align: left;
+    margin-bottom: 0;
+    color: #667085;
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Inter",sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0;
+    text-transform: none;
+}
+
+.input-email {
+    display: flex;
+    align-items: center;
+}
+.input-email input {
+    padding: 25px;
+    background-image: url('img/email.png');
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+.input-pass {
+    display: flex;
+    align-items: center;
+}
+.input-pass input {
+    padding: 25px;
+    background-image: url('img/lock.png');
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: left center;
 }
