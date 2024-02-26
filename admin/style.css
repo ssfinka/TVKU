@@ -264,6 +264,11 @@ a {
     line-height: 24px; /* 150% */
 }
 
+.sidebar-item a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .sidebar-item {
     display: flex;
     padding: 8px 12px;
