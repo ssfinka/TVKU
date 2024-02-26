@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Laporan Kerja</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- START HEADER -->
+
+    <header class="header">
+        <div class="breadcumb">Detail Laporan Kerja</div>
+        <div class="header-search">
+            <div class="input-container">
+                <i class="input-logo">
+                    <img src="images/search.svg" alt="">
+                </i>
+                <input class="input-field" type="text" placeholder="Search">
+            </div>
+            <div class="account-avatar">
+                <img src="images/avatar.png" alt="">
+            </div>
+        </div>
+    </header>
+
+    <!-- END HEADER -->
+
+    <!-- START SIDEBAR -->
+
+    <section class="sidebar">
+        <div class="sidebar-top">
+            <div class="sidebar-logo">
+                <img style="width: 72px; height: 48px;" src="images/logo.png" />
+            </div>
+            <div class="input-container">
+                <i class="input-logo">
+                    <img src="images/search.svg" alt="">
+                </i>
+                <input class="input-field" type="text" placeholder="Search">
+            </div>
+            <div class="sidebar-item-wrap">
+                <div class="sidebar-item">
+                    <div class="sidebar-item-logo">
+                        <img src="images/bar-chart.png" alt="">
+                    </div>
+                    <div class="sidebar-item-text">Dashboard</div>
+                </div>
+                <div class="sidebar-item">
+                    <div class="sidebar-title">Tugas</div>
+                </div>
+                <div class="sidebar-item sidebar-item-content">
+                    <div class="sidebar-item-logo">
+                        <img src="images/layers.svg" alt="">
+                    </div>
+                    <div class="sidebar-item-text">Tugas</div>
+                </div>
+                <div class="sidebar-item">
+                    <div class="sidebar-title">Laporan</div>
+                </div>
+                <div class="sidebar-item sidebar-item-content">
+                    <div class="sidebar-item-logo">
+                        <img src="images/file-text.svg" alt="">
+                    </div>
+                    <div class="sidebar-item-text">Laporan Pekerjaan</div>
+                </div>
+                <div class="sidebar-item sidebar-item-content">
+                    <div class="sidebar-item-logo">
+                        <img src="images/clock.svg" alt="">
+                    </div>
+                    <div class="sidebar-item-text">Laporan Ketepatan</div>
+                </div>
+                <div class="sidebar-item">
+                    <div class="sidebar-title">Kelola</div>
+                </div>
+                <div class="sidebar-item sidebar-item-content">
+                    <div class="sidebar-item-logo">
+                        <img src="images/file-text.svg" alt="">
+                    </div>
+                    <div class="sidebar-item-text">Laporan</div>
+                </div>
+                <div class="sidebar-item sidebar-item-content">
+                    <div class="sidebar-item-logo">
+                        <img src="images/users.svg" alt="">
+                    </div>
+                    <div class="sidebar-item-text">Users</div>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar-bot">
+            <div class="sidebar-wrap">
+                <div class="sidebar-item sidebar-item-content">
+                    <div class="sidebar-item-logo">
+                        <img src="images/settings.svg" alt="">
+                    </div>
+                    <div class="sidebar-item-text">Pengaturan</div>
+                </div>
+                <hr class="solid">
+                <div class="account">
+                    <div class="account-avatar">
+                        <img src="images/avatar.png" alt="">
+                    </div>
+                    <div class="account-text">
+                        <div class="row">
+                            <div class="account-name">Olivia Rhye</div>
+                            <div class="account-email">olivia@untitledui.com</div>
+                        </div>
+                    </div>
+                    <div class="sidebar-item-logo">
+                        <img src="images/log-out.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- END SIDEBAR -->
+
+    <main class="main">
+        <div class="container">
+            <div class="col-md-12">
+                <div class="frame-gray">
+                    <div class="input-container" style="width: 80%;">
+                        <i class="input-logo">
+                            <img src="images/search.svg" alt="">
+                        </i>
+                        <input class="input-field" type="text" placeholder="Search">
+                    </div>
+                    <button class="button-gray" style="width: fit-content;"><img src="images/filter.svg" alt="">More Filter</button>
+                    <button class="button-gray" style="width: fit-content;"><img src="images/download-cloud.svg" alt="">Export CSV</button>
+                </div>
+            </div>
+            <!-- TABLE -->
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="text-header">Data Laporan <span class="span-info">100 Laporan</span></div>
+                    </div>
+                    <table class="table">
+                        <tr>
+                            <th>No</th>
+                            <th>Tanggal</th>
+                            <th>Nama Tugas</th>
+                            <th>Kategori</th>
+                            <th>Status Pekerjaan</th>
+                            <th>Ketepatan</th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>01 Januari 2024</td>
+                            <td>Tugas #1</td>
+                            <td>Kategori #1</td>
+                            <td><span class="span-success">Selesai</span></td>
+                            <td><span class="span-success">Tepat Waktu</span></td>
+                            <td><img src="images/eye.svg" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: #fff;">2</td>
+                            <td style="background-color: #fff;">01 Januari 2024</td>
+                            <td style="background-color: #fff;">Tugas #1</td>
+                            <td style="background-color: #fff;">Kategori #1</td>
+                            <td style="background-color: #fff;"><span class="span-success">Selesai</span></td>
+                            <td style="background-color: #fff;"><span class="span-success">Tepat Waktu</span></td>
+                            <td style="background-color: #fff;"><img src="images/eye.svg" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>01 Januari 2024</td>
+                            <td>Tugas #1</td>
+                            <td>Kategori #1</td>
+                            <td><span class="span-success">Selesai</span></td>
+                            <td><span class="span-success">Tepat Waktu</span></td>
+                            <td><img src="images/eye.svg" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: #fff;">2</td>
+                            <td style="background-color: #fff;">01 Januari 2024</td>
+                            <td style="background-color: #fff;">Tugas #1</td>
+                            <td style="background-color: #fff;">Kategori #1</td>
+                            <td style="background-color: #fff;"><span class="span-success">Selesai</span></td>
+                            <td style="background-color: #fff;"><span class="span-success">Tepat Waktu</span></td>
+                            <td style="background-color: #fff;"><img src="images/eye.svg" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>01 Januari 2024</td>
+                            <td>Tugas #1</td>
+                            <td>Kategori #1</td>
+                            <td><span class="span-success">Selesai</span></td>
+                            <td><span class="span-success">Tepat Waktu</span></td>
+                            <td><img src="images/eye.svg" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: #fff;">2</td>
+                            <td style="background-color: #fff;">01 Januari 2024</td>
+                            <td style="background-color: #fff;">Tugas #1</td>
+                            <td style="background-color: #fff;">Kategori #1</td>
+                            <td style="background-color: #fff;"><span class="span-success">Selesai</span></td>
+                            <td style="background-color: #fff;"><span class="span-success">Tepat Waktu</span></td>
+                            <td style="background-color: #fff;"><img src="images/eye.svg" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>01 Januari 2024</td>
+                            <td>Tugas #1</td>
+                            <td>Kategori #1</td>
+                            <td><span class="span-success">Selesai</span></td>
+                            <td><span class="span-success">Tepat Waktu</span></td>
+                            <td><img src="images/eye.svg" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: #fff;">2</td>
+                            <td style="background-color: #fff;">01 Januari 2024</td>
+                            <td style="background-color: #fff;">Tugas #1</td>
+                            <td style="background-color: #fff;">Kategori #1</td>
+                            <td style="background-color: #fff;"><span class="span-success">Selesai</span></td>
+                            <td style="background-color: #fff;"><span class="span-success">Tepat Waktu</span></td>
+                            <td style="background-color: #fff;"><img src="images/eye.svg" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>01 Januari 2024</td>
+                            <td>Tugas #1</td>
+                            <td>Kategori #1</td>
+                            <td><span class="span-success">Selesai</span></td>
+                            <td><span class="span-success">Tepat Waktu</span></td>
+                            <td><img src="images/eye.svg" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: #fff;">2</td>
+                            <td style="background-color: #fff;">01 Januari 2024</td>
+                            <td style="background-color: #fff;">Tugas #1</td>
+                            <td style="background-color: #fff;">Kategori #1</td>
+                            <td style="background-color: #fff;"><span class="span-success">Selesai</span></td>
+                            <td style="background-color: #fff;"><span class="span-success">Tepat Waktu</span></td>
+                            <td style="background-color: #fff;"><img src="images/eye.svg" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>01 Januari 2024</td>
+                            <td>Tugas #1</td>
+                            <td>Kategori #1</td>
+                            <td><span class="span-success">Selesai</span></td>
+                            <td><span class="span-success">Tepat Waktu</span></td>
+                            <td><img src="images/eye.svg" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: #fff;">2</td>
+                            <td style="background-color: #fff;">01 Januari 2024</td>
+                            <td style="background-color: #fff;">Tugas #1</td>
+                            <td style="background-color: #fff;">Kategori #1</td>
+                            <td style="background-color: #fff;"><span class="span-success">Selesai</span></td>
+                            <td style="background-color: #fff;"><span class="span-success">Tepat Waktu</span></td>
+                            <td style="background-color: #fff;"><img src="images/eye.svg" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>01 Januari 2024</td>
+                            <td>Tugas #1</td>
+                            <td>Kategori #1</td>
+                            <td><span class="span-success">Selesai</span></td>
+                            <td><span class="span-success">Tepat Waktu</span></td>
+                            <td><img src="images/eye.svg" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: #fff;">2</td>
+                            <td style="background-color: #fff;">01 Januari 2024</td>
+                            <td style="background-color: #fff;">Tugas #1</td>
+                            <td style="background-color: #fff;">Kategori #1</td>
+                            <td style="background-color: #fff;"><span class="span-success">Selesai</span></td>
+                            <td style="background-color: #fff;"><span class="span-success">Tepat Waktu</span></td>
+                            <td style="background-color: #fff;"><img src="images/eye.svg" alt=""></td>
+                        </tr>
+                    </table>
+                    <div class="pagination">
+                        <button class="button-gray" style="width: fit-content;"><img src="images/arrow-left.svg" alt="">Prev</button>
+                        <div style="display: flex; gap: 4px;">
+                            <button class="button-gray">1</button>
+                            <button class="button-gray">2</button>
+                            <button class="button-gray">3</button>
+                            <button class="button-gray">4</button>
+                            <button class="button-gray">5</button>
+                        </div>
+                        <button class="button-gray" style="width: fit-content;"><img src="images/arrow-right.svg" alt="">Next</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+
+    
+</body>
+</html>
