@@ -100,7 +100,8 @@
 
 body {
     height: 100vh;
-
+    overflow: hidden;
+    overflow-y: auto;
     display: grid;
     grid-template-columns: 300px 1fr;
     grid-template-rows: 60px 1fr;
@@ -676,7 +677,6 @@ tr:nth-child(even) {
     /* Shadow/xs */
     box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
     color: var(--White, #FFF);
-    
 }
 
 .button-gray {
@@ -693,7 +693,6 @@ tr:nth-child(even) {
     /* Shadow/xs */
     box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
     color: var(--gray-700);
-    
 }
 
 /* Add Animation */
@@ -726,8 +725,8 @@ tr:nth-child(even) {
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
 }
 
 .modal-wrap {
@@ -743,10 +742,7 @@ tr:nth-child(even) {
     gap: 32px;
     border-radius: 12px;
     background: var(--White, #FFF);
-    
-    /* Shadow/xl */
     box-shadow: 0px 8px 8px -4px rgba(16, 24, 40, 0.03), 0px 20px 24px -4px rgba(16, 24, 40, 0.08);
-
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;
     animation-name: animatetop;
@@ -768,3 +764,33 @@ tr:nth-child(even) {
     align-self: stretch;
 }
 
+.table-avatar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.table-avatar img {
+    width: 40px;
+    height: 40px;
+    border-radius: 200px;
+    background: var(--avatar-user-square-olivia-rhye-color-background, lightgray 50% / cover no-repeat, #C7B9DA);
+}
+
+.highlighted-row td {
+    background-color: white;
+}
+
+.table-text-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.table-text-wrapper img {
+    margin-right: 10px;
+}
+
+td img {
+    margin-right: 8px;
+}

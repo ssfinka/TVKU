@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Laporan Kerja</title>
+    <title>Tugas</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,7 +14,7 @@
     <!-- START HEADER -->
 
     <header class="header">
-        <div class="breadcumb">Laporan Kerja</div>
+        <div class="breadcumb">Tugas</div>
         <div class="header-search">
             <div class="input-container">
                 <i class="input-logo">
@@ -48,7 +48,31 @@
                     <div class="sidebar-item-logo">
                         <img src="images/bar-chart.png" alt="">
                     </div>
-                    <a href="dashboard_admin.html" class="sidebar-item-text"><div class="sidebar-item-text">Dashboard</div></a>
+                    <a href="dashboard_admin.html" class="sidebar-item-text"><div class="sidebar-item-text">Dashboard</div>
+                </div></a>
+                <div class="sidebar-item">
+                    <div class="sidebar-title">Tugas</div>
+                </div>
+                <div class="sidebar-item sidebar-item-content">
+                    <div class="sidebar-item-logo">
+                        <img src="images/layers.svg" alt="">
+                    </div>
+                    <a href="tugas.html" class="sidebar-item-text"><div class="sidebar-item-text">Tugas</div>
+                </div>
+                <div class="sidebar-item">
+                    <div class="sidebar-title">Laporan</div>
+                </div>
+                <div class="sidebar-item sidebar-item-content">
+                    <div class="sidebar-item-logo">
+                        <img src="images/file-text.svg" alt="">
+                    </div>
+                    <a href="detail_laporankerja_admin.html" class="sidebar-item-text"><div class="sidebar-item-text">Laporan Pekerjaan</div>
+                </div></a>
+                <div class="sidebar-item sidebar-item-content">
+                    <div class="sidebar-item-logo">
+                        <img src="images/clock.svg" alt="">
+                    </div>
+                    <div class="sidebar-item-text">Laporan Ketepatan</div>
                 </div>
                 <div class="sidebar-item">
                     <div class="sidebar-title">Kelola</div>
@@ -73,7 +97,7 @@
                     <div class="sidebar-item-logo">
                         <img src="images/settings.svg" alt="">
                     </div>
-                    <a href="profile_admin.html"><div class="sidebar-item-text">Pengaturan</div></a>
+                    <div class="sidebar-item-text">Pengaturan</div>
                 </div>
                 <hr class="solid">
                 <div class="account">
@@ -106,15 +130,9 @@
                         </i>
                         <input class="input-field" type="text" placeholder="Search">
                     </div>
-                    <button class="button-gray" style="width: 17%;"><img src="images/filter.svg" alt="">More Filter</button>
-                    <div class="input-container">
-                        <input class="input-field" type="date" placeholder="tanggal mulai">
-                    </div>
-                    <div class="input-container">
-                        <input class="input-field" type="date" placeholder="tanggal selesai">
-                    </div>
-                    <button class="button-gray" style="width: fit-content;"><img src="images/download-cloud.svg" alt="">download</button>
-                    <button id="tambahLaporan" class="button-base" style="width: 23%;"><img src="images/plus.svg" alt="">Tambah Laporan</button>
+                    <button class="button-gray" style="width: fit-content;"><img src="images/filter.svg" alt="">More Filter</button>
+                    <button class="button-gray" style="width: fit-content;"><img src="images/download-cloud.svg" alt="">Export CSV</button>
+                    <button id="tambahLaporan" class="button-base"><img src="images/plus.svg" alt="">Tambah Tugas</button>
                 </div>
             </div>
             <!-- TABLE -->
@@ -135,171 +153,123 @@
                         <tr>
                             <td>1</td>
                             <td>01 Januari 2024</td>
-                            <td>
-                                <div class="table-text-wrapper">
-                                    <img class="table-image" src="images/avatar.png" alt=""> 
-                                    Alfreds Futterkiste
-                                </div>
-                            </td>
+                            <td><img class="table-image" src="images/avatar.png" alt=""> Alfreds Futterkiste</td>
                             <td>Nama Tugas #1</td>
                             <td>Lorem ipsum dolor sit amet consectetur. Viverra volutpat scelerisque id vitae.</td>
                             <td>
-                                <img src="images/eye.svg" alt="">
-                                <img src="images/edit-2.svg" alt="">
-                                <img src="images/trash.svg" alt="">
+                                <img style="padding: 4px;" src="images/eye.svg" alt="">
+                                <img style="padding: 4px;" src="images/edit-2.svg" alt="">
+                                <img style="padding: 4px;" src="images/trash.svg" alt="">
                             </td>
-                        </tr>                                               
-                        <tr class="highlighted-row">
-                            <td>2</td>
-                            <td>01 Januari 2024</td>
-                            <td>
-                                <div class="table-text-wrapper">
-                                    <img class="table-image" src="images/avatar.png" alt=""> 
-                                    Alfreds Futterkiste
-                                </div>
-                            </td>
-                            <td>Nama Tugas #1</td>
-                            <td>Lorem ipsum dolor sit amet consectetur. Viverra volutpat scelerisque id vitae.</td>
-                            <td>
-                                <img src="images/eye.svg" alt="">
-                                <img src="images/edit-2.svg" alt="">
-                                <img src="images/trash.svg" alt="">
-                            </td>
-                        </tr> 
-                        <tr">
-                            <td>3</td>
-                            <td>01 Januari 2024</td>
-                            <td>
-                                <div class="table-text-wrapper">
-                                    <img class="table-image" src="images/avatar.png" alt=""> 
-                                    Alfreds Futterkiste
-                                </div>
-                            </td>
-                            <td>Nama Tugas #1</td>
-                            <td>Lorem ipsum dolor sit amet consectetur. Viverra volutpat scelerisque id vitae.</td>
-                            <td><img src="images/eye.svg" alt="">
-                                <img src="images/edit-2.svg" alt="">
-                                <img src="images/trash.svg" alt="">
-                            </td>
-                        </tr> 
-                        <tr class="highlighted-row">
-                            <td>4</td>
-                            <td>01 Januari 2024</td>
-                            <td>
-                                <div class="table-text-wrapper">
-                                    <img class="table-image" src="images/avatar.png" alt=""> 
-                                    Alfreds Futterkiste
-                                </div>
-                            </td>
-                            <td>Nama Tugas #1</td>
-                            <td>Lorem ipsum dolor sit amet consectetur. Viverra volutpat scelerisque id vitae.</td>
-                            <td>
-                                <img src="images/eye.svg" alt="">
-                                <img src="images/edit-2.svg" alt="">
-                                <img src="images/trash.svg" alt="">
-                            </td>
-                        </tr> 
+                        </tr>
                         <tr>
-                            <td>5</td>
-                            <td>01 Januari 2024</td>
-                            <td>
-                                <div class="table-text-wrapper">
-                                    <img class="table-image" src="images/avatar.png" alt=""> 
-                                    Alfreds Futterkiste
-                                </div>
+                            <td style="background-color: #fff;">2</td>
+                            <td style="background-color: #fff;">01 Januari 2024</td>
+                            <td style="background-color: #fff;"><img class="table-image" src="images/avatar.png" alt=""> Alfreds Futterkiste</td>
+                            <td style="background-color: #fff;">Nama Tugas #1</td>
+                            <td style="background-color: #fff;">Lorem ipsum dolor sit amet consectetur. Viverra volutpat scelerisque id vitae.</td>
+                            <td style="background-color: #fff;">
+                                <img style="padding: 4px;" src="images/eye.svg" alt="">
+                                <img style="padding: 4px;" src="images/edit-2.svg" alt="">
+                                <img style="padding: 4px;" src="images/trash.svg" alt="">
                             </td>
-                            <td>Nama Tugas #1</td>
-                            <td>Lorem ipsum dolor sit amet consectetur. Viverra volutpat scelerisque id vitae.</td>
-                            <td><img src="images/eye.svg" alt="">
-                                <img src="images/edit-2.svg" alt="">
-                                <img src="images/trash.svg" alt="">
-                            </td>
-                        </tr> 
-                        <tr class="highlighted-row">
-                            <td>6</td>
-                            <td>01 Januari 2024</td>
-                            <td>
-                                <div class="table-text-wrapper">
-                                    <img class="table-image" src="images/avatar.png" alt=""> 
-                                    Alfreds Futterkiste
-                                </div>
-                            </td>
-                            <td>Nama Tugas #1</td>
-                            <td>Lorem ipsum dolor sit amet consectetur. Viverra volutpat scelerisque id vitae.</td>
-                            <td>
-                                <img src="images/eye.svg" alt="">
-                                <img src="images/edit-2.svg" alt="">
-                                <img src="images/trash.svg" alt="">
-                            </td>
-                        </tr> 
+                        </tr>
                         <tr>
-                            <td>7</td>
+                            <td>1</td>
                             <td>01 Januari 2024</td>
-                            <td>
-                                <div class="table-text-wrapper">
-                                    <img class="table-image" src="images/avatar.png" alt=""> 
-                                    Alfreds Futterkiste
-                                </div>
-                            </td>
+                            <td><img class="table-image" src="images/avatar.png" alt=""> Alfreds Futterkiste</td>
                             <td>Nama Tugas #1</td>
                             <td>Lorem ipsum dolor sit amet consectetur. Viverra volutpat scelerisque id vitae.</td>
                             <td>
-                                <img src="images/eye.svg" alt="">
-                                <img src="images/edit-2.svg" alt="">
-                                <img src="images/trash.svg" alt="">
+                                <img style="padding: 4px;" src="images/eye.svg" alt="">
+                                <img style="padding: 4px;" src="images/edit-2.svg" alt="">
+                                <img style="padding: 4px;" src="images/trash.svg" alt="">
                             </td>
-                        </tr> 
-                        <tr class="highlighted-row">
-                            <td>8</td>
-                            <td>01 Januari 2024</td>
-                            <td>
-                                <div class="table-text-wrapper">
-                                    <img class="table-image" src="images/avatar.png" alt=""> 
-                                    Alfreds Futterkiste
-                                </div>
-                            </td>
-                            <td>Nama Tugas #1</td>
-                            <td>Lorem ipsum dolor sit amet consectetur. Viverra volutpat scelerisque id vitae.</td>
-                            <td>
-                                <img src="images/eye.svg" alt="">
-                                <img src="images/edit-2.svg" alt="">
-                                <img src="images/trash.svg" alt="">
-                            </td>
-                        </tr> 
+                        </tr>
                         <tr>
-                            <td>9</td>
-                            <td>01 Januari 2024</td>
-                            <td>
-                                <div class="table-text-wrapper">
-                                    <img class="table-image" src="images/avatar.png" alt=""> 
-                                    Alfreds Futterkiste
-                                </div>
+                            <td style="background-color: #fff;">2</td>
+                            <td style="background-color: #fff;">01 Januari 2024</td>
+                            <td style="background-color: #fff;"><img class="table-image" src="images/avatar.png" alt=""> Alfreds Futterkiste</td>
+                            <td style="background-color: #fff;">Nama Tugas #1</td>
+                            <td style="background-color: #fff;">Lorem ipsum dolor sit amet consectetur. Viverra volutpat scelerisque id vitae.</td>
+                            <td style="background-color: #fff;">
+                                <img style="padding: 4px;" src="images/eye.svg" alt="">
+                                <img style="padding: 4px;" src="images/edit-2.svg" alt="">
+                                <img style="padding: 4px;" src="images/trash.svg" alt="">
                             </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>01 Januari 2024</td>
+                            <td><img class="table-image" src="images/avatar.png" alt=""> Alfreds Futterkiste</td>
                             <td>Nama Tugas #1</td>
                             <td>Lorem ipsum dolor sit amet consectetur. Viverra volutpat scelerisque id vitae.</td>
                             <td>
-                                <img src="images/eye.svg" alt="">
-                                <img src="images/edit-2.svg" alt="">
-                                <img src="images/trash.svg" alt="">
+                                <img style="padding: 4px;" src="images/eye.svg" alt="">
+                                <img style="padding: 4px;" src="images/edit-2.svg" alt="">
+                                <img style="padding: 4px;" src="images/trash.svg" alt="">
                             </td>
-                        </tr> 
-                        <tr class="highlighted-row">
-                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: #fff;">2</td>
+                            <td style="background-color: #fff;">01 Januari 2024</td>
+                            <td style="background-color: #fff;"><img class="table-image" src="images/avatar.png" alt=""> Alfreds Futterkiste</td>
+                            <td style="background-color: #fff;">Nama Tugas #1</td>
+                            <td style="background-color: #fff;">Lorem ipsum dolor sit amet consectetur. Viverra volutpat scelerisque id vitae.</td>
+                            <td style="background-color: #fff;">
+                                <img style="padding: 4px;" src="images/eye.svg" alt="">
+                                <img style="padding: 4px;" src="images/edit-2.svg" alt="">
+                                <img style="padding: 4px;" src="images/trash.svg" alt="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
                             <td>01 Januari 2024</td>
-                            <td>
-                                <div class="table-text-wrapper">
-                                    <img class="table-image" src="images/avatar.png" alt=""> 
-                                    Alfreds Futterkiste
-                                </div>
-                            </td>
+                            <td><img class="table-image" src="images/avatar.png" alt=""> Alfreds Futterkiste</td>
                             <td>Nama Tugas #1</td>
                             <td>Lorem ipsum dolor sit amet consectetur. Viverra volutpat scelerisque id vitae.</td>
                             <td>
-                                <img src="images/eye.svg" alt="">
-                                <img src="images/edit-2.svg" alt="">
-                                <img src="images/trash.svg" alt="">
+                                <img style="padding: 4px;" src="images/eye.svg" alt="">
+                                <img style="padding: 4px;" src="images/edit-2.svg" alt="">
+                                <img style="padding: 4px;" src="images/trash.svg" alt="">
                             </td>
-                        </tr> 
+                        </tr>
+                        <tr>
+                            <td style="background-color: #fff;">2</td>
+                            <td style="background-color: #fff;">01 Januari 2024</td>
+                            <td style="background-color: #fff;"><img class="table-image" src="images/avatar.png" alt=""> Alfreds Futterkiste</td>
+                            <td style="background-color: #fff;">Nama Tugas #1</td>
+                            <td style="background-color: #fff;">Lorem ipsum dolor sit amet consectetur. Viverra volutpat scelerisque id vitae.</td>
+                            <td style="background-color: #fff;">
+                                <img style="padding: 4px;" src="images/eye.svg" alt="">
+                                <img style="padding: 4px;" src="images/edit-2.svg" alt="">
+                                <img style="padding: 4px;" src="images/trash.svg" alt="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>01 Januari 2024</td>
+                            <td><img class="table-image" src="images/avatar.png" alt=""> Alfreds Futterkiste</td>
+                            <td>Nama Tugas #1</td>
+                            <td>Lorem ipsum dolor sit amet consectetur. Viverra volutpat scelerisque id vitae.</td>
+                            <td>
+                                <img style="padding: 4px;" src="images/eye.svg" alt="">
+                                <img style="padding: 4px;" src="images/edit-2.svg" alt="">
+                                <img style="padding: 4px;" src="images/trash.svg" alt="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: #fff;">2</td>
+                            <td style="background-color: #fff;">01 Januari 2024</td>
+                            <td style="background-color: #fff;"><img class="table-image" src="images/avatar.png" alt=""> Alfreds Futterkiste</td>
+                            <td style="background-color: #fff;">Nama Tugas #1</td>
+                            <td style="background-color: #fff;">Lorem ipsum dolor sit amet consectetur. Viverra volutpat scelerisque id vitae.</td>
+                            <td style="background-color: #fff;">
+                                <img style="padding: 4px;" src="images/eye.svg" alt="">
+                                <img style="padding: 4px;" src="images/edit-2.svg" alt="">
+                                <img style="padding: 4px;" src="images/trash.svg" alt="">
+                            </td>
+                        </tr>
                     </table>
                     <div class="pagination">
                         <button class="button-gray" style="width: fit-content;"><img src="images/arrow-left.svg" alt="">Prev</button>
@@ -343,7 +313,7 @@
                             <i class="input-logo">
                                 <img src="images/clock.svg" alt="">
                             </i>
-                            <input class="input-field" type="datetime-local" placeholder="Masukan nama Lengkap">
+                            <input class="input-field" type="datetime-local" placeholder="Masukan nama Lenkap">
                         </div>
                     </div>
                     <div class="input-base">
@@ -375,30 +345,24 @@
                 </div>
             </div>
         </div>
-        
+
     </main>
 
     <script>
-        // Get the modal
         var modal = document.getElementById("modal");
 
-        // Get the button that opens the modal
         var btn = document.getElementById("tambahLaporan");
 
-        // Get the <span> element that closes the modal
         var batal = document.getElementById("close")[0];
 
-        // When the user clicks on the button, open the modal
         btn.onclick = function() {
         modal.style.display = "block";
         }
 
-        // When the user clicks on <span> (x), close the modal
         batal.onclick = function() {
         modal.style.display = "none";
         }
 
-        // When the user clicks anywhere outside of the modal, close it
         window.onclick = function(event) {
         if (event.target == modal) {
             modal.style.display = "none";
