@@ -205,6 +205,13 @@ a {
     align-self: stretch;
     height: 100%;
     border-right: 1px solid var(--Gray-200, #EAECF0);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1000;
+    overflow-y: auto;
+    width: 250px;
 }
 
 .sidebar-top {
