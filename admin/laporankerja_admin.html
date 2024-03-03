@@ -352,7 +352,7 @@
                             <i class="input-logo">
                                 <img src="images/clock.svg" alt="">
                             </i>
-                            <input class="input-field" type="datetime-local" placeholder="Masukan nama Lenkap">
+                            <input class="input-field" type="datetime-local" placeholder="Masukan Nama Project">
                         </div>
                     </div>
                     <div class="input-base">
@@ -386,7 +386,7 @@
         var btn = document.getElementById("tambahLaporan");
 
         // Get the <span> element that closes the modal
-        var batal = document.getElementById("close")[0];
+            var batal = document.getElementById("close");
 
         // When the user clicks on the button, open the modal
         btn.onclick = function() {
@@ -394,9 +394,9 @@
         }
 
         // When the user clicks on <span> (x), close the modal
-        batal.onclick = function() {
-        modal.style.display = "none";
-        }
+            batal.onclick = function() {
+                 modal.style.display = "none";
+            }
 
         // When the user clicks anywhere outside of the modal, close it
         window.onclick = function(event) {
