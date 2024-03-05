@@ -96,6 +96,68 @@
 
     <!-- END SIDEBAR -->
 
+    <!-- MODAL  -->
+
+ <!-- TAMBAH LAPORAN -->
+
+ <div id="modal" class="modal">
+    <div class="modal-wrap">
+        <div class="modal-header">
+            <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 8px; flex: 1 0 0;">
+                <div class="text-18">Tambah Laporan</div>
+                <div class="text-14">Masukan data laporan pekerjaan dengan lengkap</div>
+            </div>
+            <div style="display: flex; align-items: center; gap: 12px;">
+                <button id="close" class="button-gray">Batal</button>
+                <button class="button-base">Simpan</button>
+            </div>
+        </div>
+        <div class="modal-content">
+            <div class="input-base">
+                <label for="" class="label">Nama Project</label>
+                <div class="input-container">
+                    <input class="input-field" type="text" placeholder="Masukan nama Lenkap">
+                </div>
+            </div>
+            <div class="input-base">
+                <label for="" class="label">Jadwal Mulai</label>
+                <div class="input-container">
+                    <i class="input-logo">
+                        <img src="images/clock.svg" alt="">
+                    </i>
+                    <input class="input-field" type="datetime-local" placeholder="Masukan nama Lengkap">
+                </div>
+            </div>
+            <div class="input-base">
+                <label for="" class="label">Jadwal Akhir</label>
+                <div class="input-container">
+                    <i class="input-logo">
+                        <img src="images/clock.svg" alt="">
+                    </i>
+                    <input class="input-field" type="datetime-local" placeholder="Masukan Nama Project">
+                </div>
+            </div>
+            <div class="input-base">
+                <label for="" class="label">Deskripsi</label>
+                <div class="">
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+            <div class="input-base">
+                <label for="" class="label">Status Pekerjaan</label>
+                <div class="input-container">
+                    <select name="status-pekerjaan" id="status" class="input-field">
+                        <option value="-">--Pilih Status--</option>
+                        <option value="belum dikerjakan">Belum Dikerjakan</option>
+                        <option value="dalam proses">Dalam Proses</option>
+                        <option value="selesai">Selesai</option>
+                    </select>
+                </div>
+            </div>   
+        </div>
+    </div>
+</div>
+
     <main class="main">
         <div class="container">
             <div class="col-md-12">
@@ -316,68 +378,233 @@
             </div>
         </div>
 
-        <!-- TAMBAH LAPORAN -->
-
-        <div id="modal" class="modal">
-            <div class="modal-wrap">
-                <div class="modal-header">
-                    <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 8px; flex: 1 0 0;">
-                        <div class="text-18">Tambah Laporan</div>
-                        <div class="text-14">Masukan data laporan pekerjaan dengan lengkap</div>
-                    </div>
-                    <div style="display: flex; align-items: center; gap: 12px;">
-                        <button id="close" class="button-gray">Batal</button>
-                        <button class="button-base">Simpan</button>
-                    </div>
-                </div>
-                <div class="modal-content">
-                    <div class="input-base">
-                        <label for="" class="label">Nama Project</label>
-                        <div class="input-container">
-                            <input class="input-field" type="text" placeholder="Masukan nama Lenkap">
-                        </div>
-                    </div>
-                    <div class="input-base">
-                        <label for="" class="label">Jadwal Mulai</label>
-                        <div class="input-container">
-                            <i class="input-logo">
-                                <img src="images/clock.svg" alt="">
-                            </i>
-                            <input class="input-field" type="datetime-local" placeholder="Masukan nama Lengkap">
-                        </div>
-                    </div>
-                    <div class="input-base">
-                        <label for="" class="label">Jadwal Akhir</label>
-                        <div class="input-container">
-                            <i class="input-logo">
-                                <img src="images/clock.svg" alt="">
-                            </i>
-                            <input class="input-field" type="datetime-local" placeholder="Masukan Nama Project">
-                        </div>
-                    </div>
-                    <div class="input-base">
-                        <label for="" class="label">Deskripsi</label>
-                        <div class="">
-                            <textarea name="" id="" cols="30" rows="10"></textarea>
-                        </div>
-                    </div>
-                    <div class="input-base">
-                        <label for="" class="label">Status Pekerjaan</label>
-                        <div class="input-container">
-                            <select name="status-pekerjaan" id="status" class="input-field">
-                                <option value="-">--Pilih Status--</option>
-                                <option value="belum dikerjakan">Belum Dikerjakan</option>
-                                <option value="dalam proses">Dalam Proses</option>
-                                <option value="selesai">Selesai</option>
-                            </select>
-                        </div>
-                    </div>   
-                </div>
-            </div>
-        </div>
+       
         
     </main>
 
+    <!-- M Version -->
+    <main class="m-main">
+        <div class="m-container">
+            <p class="text">Laporan Kerja</p>
+            <div class="m-col-md-12">
+                <div class="m-frame-gray">
+                    <div class="m-input-container">
+                        <i class="m-input-logo">
+                            <img src="images/search.svg" alt="">
+                        </i>
+                    </div> 
+                    <span style="margin: 10px 0px">
+                        <button class="m-button-gray" style="width: 17%; margin-right: 10px;"><img src="images/filter.svg" alt=""></button>
+                        <!-- <input class="m-input-field" type="date"> -->
+                        <!-- <input class="m-input-field" type="date" placeholder="tanggal selesai"> -->
+                        <button class="m-button-gray" style="margin-right: 10px;"><img src="images/download-cloud.svg" alt=""></button>
+                        <button id="tambahLaporan" class="m-button-base"><img src="images/plus.svg" alt="">Tambah Laporan</button>
+                    </span>
+                </div>
+            </div>
+            <!-- TABLE -->
+            <div class="wrapper">
+            <div class="m-col-md-12">
+                <div class="m-card">
+                    <div class="m-card-header">
+                        <div class="m-text-header">Data Laporan <span class="m-span-info">100 Laporan</span></div>
+                    </div>
+                    <table class="m-table">
+                        <tr>
+                            <th>No</th>
+                            <th>Tanggal</th>
+                            <th>Nama</th>
+                            <th>Nama Tugas</th>
+                            <th>Deskripsi</th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>01 Januari 2024</td>
+                            <td>
+                                <div class="m-table-text-wrapper">
+                                    <img class="m-table-image" src="images/avatar.png" alt=""> 
+                                    Alfreds Futterkiste
+                                </div>
+                            </td>
+                            <td>Nama Tugas #1</td>
+                            <td>Lorem ipsum dolor sit amet consectetur. Viverra volutpat scelerisque id vitae.</td>
+                            <td>
+                                <img src="images/eye.svg" alt="">
+                                <img src="images/edit-2.svg" alt="">
+                                <img src="images/trash.svg" alt="">
+                            </td>
+                        </tr>                                               
+                        <tr class="m-highlighted-row">
+                            <td>2</td>
+                            <td>01 Januari 2024</td>
+                            <td>
+                                <div class="m-table-text-wrapper">
+                                    <img class="m-table-image" src="images/avatar.png" alt=""> 
+                                    Alfreds Futterkiste
+                                </div>
+                            </td>
+                            <td>Nama Tugas #1</td>
+                            <td>Lorem ipsum dolor sit amet consectetur. Viverra volutpat scelerisque id vitae.</td>
+                            <td>
+                                <img src="images/eye.svg" alt="">
+                                <img src="images/edit-2.svg" alt="">
+                                <img src="images/trash.svg" alt="">
+                            </td>
+                        </tr> 
+                        <tr">
+                            <td>3</td>
+                            <td>01 Januari 2024</td>
+                            <td>
+                                <div class="m-table-text-wrapper">
+                                    <img class="m-table-image" src="images/avatar.png" alt=""> 
+                                    Alfreds Futterkiste
+                                </div>
+                            </td>
+                            <td>Nama Tugas #1</td>
+                            <td>Lorem ipsum dolor sit amet consectetur. Viverra volutpat scelerisque id vitae.</td>
+                            <td><img src="images/eye.svg" alt="">
+                                <img src="images/edit-2.svg" alt="">
+                                <img src="images/trash.svg" alt="">
+                            </td>
+                        </tr> 
+                        <tr class="m-highlighted-row">
+                            <td>4</td>
+                            <td>01 Januari 2024</td>
+                            <td>
+                                <div class="m-table-text-wrapper">
+                                    <img class="m-table-image" src="images/avatar.png" alt=""> 
+                                    Alfreds Futterkiste
+                                </div>
+                            </td>
+                            <td>Nama Tugas #1</td>
+                            <td>Lorem ipsum dolor sit amet consectetur. Viverra volutpat scelerisque id vitae.</td>
+                            <td>
+                                <img src="images/eye.svg" alt="">
+                                <img src="images/edit-2.svg" alt="">
+                                <img src="images/trash.svg" alt="">
+                            </td>
+                        </tr> 
+                        <tr>
+                            <td>5</td>
+                            <td>01 Januari 2024</td>
+                            <td>
+                                <div class="m-table-text-wrapper">
+                                    <img class="m-table-image" src="images/avatar.png" alt=""> 
+                                    Alfreds Futterkiste
+                                </div>
+                            </td>
+                            <td>Nama Tugas #1</td>
+                            <td>Lorem ipsum dolor sit amet consectetur. Viverra volutpat scelerisque id vitae.</td>
+                            <td><img src="images/eye.svg" alt="">
+                                <img src="images/edit-2.svg" alt="">
+                                <img src="images/trash.svg" alt="">
+                            </td>
+                        </tr> 
+                        <tr class="m-highlighted-row">
+                            <td>6</td>
+                            <td>01 Januari 2024</td>
+                            <td>
+                                <div class="m-table-text-wrapper">
+                                    <img class="m-table-image" src="images/avatar.png" alt=""> 
+                                    Alfreds Futterkiste
+                                </div>
+                            </td>
+                            <td>Nama Tugas #1</td>
+                            <td>Lorem ipsum dolor sit amet consectetur. Viverra volutpat scelerisque id vitae.</td>
+                            <td>
+                                <img src="images/eye.svg" alt="">
+                                <img src="images/edit-2.svg" alt="">
+                                <img src="images/trash.svg" alt="">
+                            </td>
+                        </tr> 
+                        <tr>
+                            <td>7</td>
+                            <td>01 Januari 2024</td>
+                            <td>
+                                <div class="m-table-text-wrapper">
+                                    <img class="m-table-image" src="images/avatar.png" alt=""> 
+                                    Alfreds Futterkiste
+                                </div>
+                            </td>
+                            <td>Nama Tugas #1</td>
+                            <td>Lorem ipsum dolor sit amet consectetur. Viverra volutpat scelerisque id vitae.</td>
+                            <td>
+                                <img src="images/eye.svg" alt="">
+                                <img src="images/edit-2.svg" alt="">
+                                <img src="images/trash.svg" alt="">
+                            </td>
+                        </tr> 
+                        <tr class="m-highlighted-row">
+                            <td>8</td>
+                            <td>01 Januari 2024</td>
+                            <td>
+                                <div class="m-table-text-wrapper">
+                                    <img class="m-table-image" src="images/avatar.png" alt=""> 
+                                    Alfreds Futterkiste
+                                </div>
+                            </td>
+                            <td>Nama Tugas #1</td>
+                            <td>Lorem ipsum dolor sit amet consectetur. Viverra volutpat scelerisque id vitae.</td>
+                            <td>
+                                <img src="images/eye.svg" alt="">
+                                <img src="images/edit-2.svg" alt="">
+                                <img src="images/trash.svg" alt="">
+                            </td>
+                        </tr> 
+                        <tr>
+                            <td>9</td>
+                            <td>01 Januari 2024</td>
+                            <td>
+                                <div class="m-table-text-wrapper">
+                                    <img class="m-table-image" src="images/avatar.png" alt=""> 
+                                    Alfreds Futterkiste
+                                </div>
+                            </td>
+                            <td>Nama Tugas #1</td>
+                            <td>Lorem ipsum dolor sit amet consectetur. Viverra volutpat scelerisque id vitae.</td>
+                            <td>
+                                <img src="images/eye.svg" alt="">
+                                <img src="images/edit-2.svg" alt="">
+                                <img src="images/trash.svg" alt="">
+                            </td>
+                        </tr> 
+                        <tr class="m-highlighted-row">
+                            <td>10</td>
+                            <td>01 Januari 2024</td>
+                            <td>
+                                <div class="m-table-text-wrapper">
+                                    <img class="m-table-image" src="images/avatar.png" alt=""> 
+                                    Alfreds Futterkiste
+                                </div>
+                            </td>
+                            <td>Nama Tugas #1</td>
+                            <td>Lorem ipsum dolor sit amet consectetur. Viverra volutpat scelerisque id vitae.</td>
+                            <td>
+                                <img src="images/eye.svg" alt="">
+                                <img src="images/edit-2.svg" alt="">
+                                <img src="images/trash.svg" alt="">
+                            </td>
+                        </tr> 
+                    </table>
+                    <div class="m-pagination">
+                        <button class="m-button-gray" style="width: fit-content;"><img src="images/arrow-left.svg" alt="">Prev</button>
+                        <div style="display: flex; gap: 4px;">
+                            <button class="m-button-gray">1</button>
+                            <button class="m-button-gray">2</button>
+                            <button class="m-button-gray">3</button>
+                            <button class="m-button-gray">4</button>
+                            <button class="m-button-gray">5</button>
+                        </div>
+                        <button class="m-button-gray" style="width: fit-content;"><img src="images/arrow-right.svg" alt="">Next</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+
+    </main>
     <script>
         // Get the modal
         var modal = document.getElementById("modal");
