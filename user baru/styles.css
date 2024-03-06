@@ -555,7 +555,7 @@ textarea {
     align-self: stretch;
 }
 
-@media only screen and (min-width: 600px) and (max-width:991px){
+@media only screen and (min-width: 600px) and (max-width:1110px){
     /* Adjust the main-content margin-left for smaller screens */
     .container nav{
         width: 9%;
@@ -601,8 +601,12 @@ textarea {
         display: none;
     }
     .user-wrapper .user-name,
-    .user-wrapper i {
+    .user-wrapper img {
         display: none;
+    }
+    .user-wrapper i{
+        padding-left:15px;
+        color: rgb(91, 91, 91);
     }
     .container nav ul li.user-wrapper {
         margin-top: 20px;
