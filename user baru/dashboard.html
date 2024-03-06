@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dashboard user</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--- START SIDEBAR--->
+    <div class="container">
+        <nav>
+            <ul>
+                <li class="logo">
+                    <img src="img/tvku.png" alt="tvku">
+                </li>
+                <label class="menu" for="sidebar-toggle"><i class='bx bx-menu menu-item'></i></label>
+                <div class="search-box">
+                    <input type="text" class="search-txt" placeholder="Search">
+                    <a href="#" class="search-btn">
+                        <i class='bx bx-search'></i>
+                    </a>
+                </div>
+                <li><a href="dashboard.html">
+                    <i class='bx bx-bar-chart'></i>
+                    <span class="nav-item">Dashboard</span>
+                </a></li>
+                <p>Kelola</p>
+                <li><a href="tugas.html">
+                    <i class='bx bx-layer'></i>
+                    <span class="nav-item">Tugas</span>
+                </a></li>
+                <li><a href="rekap.html">
+                    <i class='bx bx-file'></i>
+                    <span class="nav-item">Rekap</span>
+                </a></li>
+                <li class="settings"><a href="profile.html">
+                    <i class='bx bx-cog'></i>
+                    <span class="nav-item">Settings</span>
+                </a></li>
+                <div class="line"></div>
+                <li class="user-wrapper">
+                    <img src="img/olivia.jpg" width="35px" height="35px">
+                     <div>
+                        <h5>Olivia Rhye</h5>
+                        <small>olivia@untitledui.com</small>
+                    </div>
+                    <i class='bx bx-log-in'></i>
+                </li>
+            </ul>
+        </nav>
+    </div>    
+    <!--- END SIDEBAR--->
+
+    <!--- START HEADER--->
+
+    <div class="main-content">
+        <header class="wrapper">
+            <h4>Dashboard</h4>
+            <div class="search-wrapper">
+                <i class='bx bx-search'></i>
+                <input type="search" placeholder="Search">
+            </div>
+            <div class="avatar">
+                <img src="img/olivia.jpg" width="35px" height="35px">
+            </div>
+        </header>
+    </div>
+
+    <!--- END HEADER--->
+
+    <main class="main">
+        <div class="container">
+            <div class="col-md-12" style="display: flex;">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="text-header">Total Tugas</div>
+                        </div>
+                        <div class="number-chart">
+                            <div class="number-badge">
+                                <div class="text-number">67</div>
+                                <div class="text-header">
+                                    <div class="card-change">
+                                        <div class="change">
+                                            <img src="img/arrow-up.svg" alt="" style="height: 20px; width: 20px;">
+                                            <div class="text-change">40%</div>
+                                        </div>
+                                        <div class="text-14">vs Last Month</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-chart">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="131" height="66" viewBox="0 0 131 66" fill="none">
+                                    <path d="M129.667 1C108.871 2.73299 107.583 44.2218 87.0001 49C70.027 52.9402 61.4323 30.5738 44.3334 33C25.7871 35.6316 19.8522 58.9382 1.66675 65H129.667V1Z" fill="#ECFDF3"/>
+                                    <path d="M129.667 1C108.871 2.73299 107.583 44.2218 87.0001 49C70.027 52.9402 61.4323 30.5738 44.3334 33C25.7871 35.6316 19.8522 58.9382 1.66675 65H129.667V1Z" fill="url(#paint0_linear_247_1003)"/>
+                                    <path d="M1.66675 65C19.8522 58.9382 25.7871 35.6316 44.3334 33C61.4323 30.5738 70.027 52.9402 87.0001 49C107.583 44.2218 108.871 2.73299 129.667 1" stroke="#12B76A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <defs>
+                                      <linearGradient id="paint0_linear_247_1003" x1="65.6667" y1="1" x2="65.6667" y2="65" gradientUnits="userSpaceOnUse">
+                                        <stop offset="0.641167" stop-color="white" stop-opacity="0"/>
+                                        <stop offset="1" stop-color="white"/>
+                                      </linearGradient>
+                                    </defs>
+                                  </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="text-header">Total Laporan</div>
+                        </div>
+                        <div class="number-chart">
+                            <div class="number-badge">
+                                <div class="text-number">77</div>
+                                <div class="text-header">
+                                    <div class="card-change">
+                                        <div class="change">
+                                            <img src="img/arrow-down.svg" alt="" style="height: 20px; width: 20px;">
+                                            <div class="text-change">10%</div>
+                                        </div>
+                                        <div class="text-14">vs Last Month</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-chart">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="131" height="66" viewBox="0 0 131 66" fill="none">
+                                    <path d="M1.3335 1C22.1294 2.73299 23.4172 44.2218 44.0002 49C60.9733 52.9402 69.568 30.5738 86.6668 33C105.213 35.6316 111.148 58.9382 129.333 65H1.3335V1Z" fill="#FEF3F2"/>
+                                    <path d="M1.3335 1C22.1294 2.73299 23.4172 44.2218 44.0002 49C60.9733 52.9402 69.568 30.5738 86.6668 33C105.213 35.6316 111.148 58.9382 129.333 65H1.3335V1Z" fill="url(#paint0_linear_247_6754)"/>
+                                    <path d="M129.333 65C111.148 58.9382 105.213 35.6316 86.6668 33C69.568 30.5738 60.9733 52.9402 44.0002 49C23.4172 44.2218 22.1294 2.73299 1.33349 1" stroke="#F04438" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <defs>
+                                      <linearGradient id="paint0_linear_247_6754" x1="65.3335" y1="1" x2="65.3335" y2="65" gradientUnits="userSpaceOnUse">
+                                        <stop offset="0.641167" stop-color="white" stop-opacity="0"/>
+                                        <stop offset="1" stop-color="white"/>
+                                      </linearGradient>
+                                    </defs>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="text-header">Pekerjaan Selesai</div>
+                        </div>
+                        <div class="number-chart">
+                            <div class="number-badge">
+                                <div class="text-number">746</div>
+                                <div class="text-header">
+                                    <div class="card-change">
+                                        <div class="change">
+                                            <img src="img/arrow-up.svg" alt="" style="height: 20px; width: 20px;">
+                                            <div class="text-change">30%</div>
+                                        </div>
+                                        <div class="text-14">vs Last Month</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-chart">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="131" height="66" viewBox="0 0 131 66" fill="none">
+                                    <path d="M129.667 1C108.871 2.73299 107.583 44.2218 87.0001 49C70.027 52.9402 61.4323 30.5738 44.3334 33C25.7871 35.6316 19.8522 58.9382 1.66675 65H129.667V1Z" fill="#ECFDF3"/>
+                                    <path d="M129.667 1C108.871 2.73299 107.583 44.2218 87.0001 49C70.027 52.9402 61.4323 30.5738 44.3334 33C25.7871 35.6316 19.8522 58.9382 1.66675 65H129.667V1Z" fill="url(#paint0_linear_247_1003)"/>
+                                    <path d="M1.66675 65C19.8522 58.9382 25.7871 35.6316 44.3334 33C61.4323 30.5738 70.027 52.9402 87.0001 49C107.583 44.2218 108.871 2.73299 129.667 1" stroke="#12B76A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <defs>
+                                      <linearGradient id="paint0_linear_247_1003" x1="65.6667" y1="1" x2="65.6667" y2="65" gradientUnits="userSpaceOnUse">
+                                        <stop offset="0.641167" stop-color="white" stop-opacity="0"/>
+                                        <stop offset="1" stop-color="white"/>
+                                      </linearGradient>
+                                    </defs>
+                                  </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div class="col-md-12">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="text-header">Anggota Tim <span class="span-info">100 Anggota</span></div>
+                    </div>
+                    <table class="table">
+                        <tr>
+                          <th>Role</th>
+                          <th>Tanggal</th>
+                          <th>Nama Tugas</th>
+                          <th>Kategori</th>
+                          <th>Status Pekerjaan</th>
+                          <th>Ketepatan</th>
+                          <th></th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td> 01 Januari 2024</td>
+                            <td>Nama Tugas #1</td>
+                            <td>Kategori #1</td>
+                            <td><span class="span-success">Pekerjaan Baru</span></td>
+                            <td><span class="span-dark">Belum Mulai</span></td>
+                            <td><img src="images/eye.svg" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: #fff;">2</td>
+                            <td style="background-color: #fff;"> 01 Januari 2024</td>
+                            <td style="background-color: #fff;"> Nama Tugas #1</td>
+                            <td style="background-color: #fff;"> Kategori #1</td>
+                            <td style="background-color: #fff;"><span class="span-success">Pekerjaan Baru</span></td>
+                            <td style="background-color: #fff;"><span class="span-dark">Belum Mulai</span></td>
+                            <td style="background-color: #fff;"><img src="images/eye.svg" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td> 01 Januari 2024</td>
+                            <td>Nama Tugas #1</td>
+                            <td>Kategori #1</td>
+                            <td><span class="span-success">Pekerjaan Baru</span></td>
+                            <td><span class="span-dark">Belum Mulai</span></td>
+                            <td><img src="images/eye.svg" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: #fff;">4</td>
+                            <td style="background-color: #fff;"> 01 Januari 2024</td>
+                            <td style="background-color: #fff;"> Nama Tugas #1</td>
+                            <td style="background-color: #fff;"> Kategori #1</td>
+                            <td style="background-color: #fff;"><span class="span-info">Dalam Proses</span></td>
+                            <td style="background-color: #fff;"><span class="span-info">Dalam waktu</span></td>
+                            <td style="background-color: #fff;"><img src="images/eye.svg" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td> 01 Januari 2024</td>
+                            <td>Nama Tugas #1</td>
+                            <td>Kategori #1</td>
+                            <td><span class="span-info">Dalam Proses</span></td>
+                            <td><span class="span-info">Dalam Waktu</span></td>
+                            <td><img src="images/eye.svg" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: #fff;">6</td>
+                            <td style="background-color: #fff;"> 01 Januari 2024</td>
+                            <td style="background-color: #fff;"> Nama Tugas #1</td>
+                            <td style="background-color: #fff;"> Kategori #1</td>
+                            <td style="background-color: #fff;"><span class="span-secondary">Revisi</span></td>
+                            <td style="background-color: #fff;"><span class="span-info">Dalam Waktu</span></td>
+                            <td style="background-color: #fff;"><img src="images/eye.svg" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td> 01 Januari 2024</td>
+                            <td>Nama Tugas #1</td>
+                            <td>Kategori #1</td>
+                            <td><span class="span-secondary">Revisi</span></td>
+                            <td><span class="span-info">Dalam Waktu</span></td>
+                            <td><img src="images/eye.svg" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: #fff;">8</td>
+                            <td style="background-color: #fff;"> 01 Januari 2024</td>
+                            <td style="background-color: #fff;"> Nama Tugas #1</td>
+                            <td style="background-color: #fff;"> Kategori #1</td>
+                            <td style="background-color: #fff;"><span class="span-danger">Selesai</span></td>
+                            <td style="background-color: #fff;"><span class="span-danger">Terlambat</span></td>
+                            <td style="background-color: #fff;"><img src="images/eye.svg" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td> 01 Januari 2024</td>
+                            <td>Nama Tugas #1</td>
+                            <td>Kategori #1</td>
+                            <td><span class="span-danger">Selesai</span></td>
+                            <td><span class="span-success">Tepat Waktu</span></td>
+                            <td><img src="images/eye.svg" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: #fff;">10</td>
+                            <td style="background-color: #fff;"> 01 Januari 2024</td>
+                            <td style="background-color: #fff;"> Nama Tugas #1</td>
+                            <td style="background-color: #fff;"> Kategori #1</td>
+                            <td style="background-color: #fff;"><span class="span-danger">Selesai</span></td>
+                            <td style="background-color: #fff;"><span class="span-success">Tepat Waktu</span></td>
+                            <td style="background-color: #fff;"><img src="images/eye.svg" alt=""></td>
+                        </tr>
+                    </table>
+                    <div class="pagination">
+                        <button class="button-gray" style="width: fit-content;"><img src="images/arrow-left.svg" alt="">Prev</button>
+                        <div style="display: flex; gap: 4px;">
+                            <button class="button-gray">1</button>
+                            <button class="button-gray">2</button>
+                            <button class="button-gray">3</button>
+                            <button class="button-gray">4</button>
+                            <button class="button-gray">5</button>
+                        </div>
+                        <button class="button-gray" style="width: fit-content;"><img src="images/arrow-right.svg" alt="">Next</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </main>
+    </body>
+</html>
