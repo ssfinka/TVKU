@@ -570,15 +570,12 @@ textarea {
         height: 40px;
     }
     .container li span,
-    .container .search-box input{
+    nav ul p,
+    .container .search-box{
         display: none;
     }
     .container li i{
         margin-bottom: -2px;
-    }
-    .search-box .search-btn i{
-        padding-left: 10px;
-        margin-bottom: 25px;
     }
     .content {
         margin-left: 100px;
