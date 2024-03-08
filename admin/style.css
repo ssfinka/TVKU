@@ -882,7 +882,16 @@ td img {
   .main {
     display: none;
   }
+
+  .m-main {
+    position: right;
+    width: 99%;
+    padding: 0;
+    margin: 0;
+  }
+
   .wrapper {
+    float: right;
     overflow: scroll;
     width: 100%;
     max-height: 500px;
@@ -893,7 +902,7 @@ td img {
     align-self: flex-start;
     flex-wrap: wrap;
     /* margin-right: -15px; */
-    margin-left: 150px;
+    margin-left: 110px;
     /* gap: 20px; */
     width: 100%;
   }
