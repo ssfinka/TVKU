@@ -303,7 +303,7 @@ p{
     display:flex;
     position: relative;
     border-radius: 6px;
-    background: blue;
+    background-color: #1d50c9;
     color: white;
     border: 1px;
     height: 33px;
@@ -418,6 +418,7 @@ td img{
     align-items: center;
     gap: 8px;
     border-radius: 8px;
+    background-color: #1d50c9;
     box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
     color: white;
 }
@@ -558,7 +559,7 @@ textarea {
 @media only screen and (min-width: 600px) and (max-width:1110px){
     /* Adjust the main-content margin-left for smaller screens */
     .container nav{
-        width: 9%;
+        width: 8%;
     }
     nav ul li {
         padding-left: 10px;
@@ -583,7 +584,7 @@ textarea {
     }
     header{
         width: 90%;
-        margin-left: -12%;
+        margin-left: -11%;
         margin-right: 0;
     }
     .search-box input[type="search"] {

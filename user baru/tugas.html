@@ -274,21 +274,17 @@
         var btn = document.getElementById("tambahLaporan");
 
         // Get the <span> element that closes the modal
-        var batal = document.getElementById("close")[0];
+            var batal = document.getElementById("close");
 
         // When the user clicks on the button, open the modal
         btn.onclick = function() {
-            modal.style.display = "block";
+        modal.style.display = "block";
         }
 
         // When the user clicks on <span> (x), close the modal
-        var batal = document.createElement("button");
-        batal.className = "button-gray";
-        batal.textContent = "Batal";
-        batal.onclick = function() {
-            modal.style.display = "none";
-        }
-        modal.querySelector(".modal-header").appendChild(batal);
+            batal.onclick = function() {
+                 modal.style.display = "none";
+            }
 
         // When the user clicks anywhere outside of the modal, close it
         window.onclick = function(event) {
