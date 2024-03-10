@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="style.css" rel="stylesheet">
     <title>Login TVKU</title>
 </head>
@@ -14,12 +15,15 @@
             <p>Masukan email dan password yang sudah terdaftar!</p>
             <form action="#">
                 <h5>Email</h5>
-                <div class="input-email">
+                <div class="input-container">
+                    <i class='bx bx-envelope'></i>
                     <input type="text" placeholder="Masukkan email anda" class="placeholder">
                 </div>
                 <h5>Password</h5>
-                <div class="input-pass">
+                <div class="input-container">
+                    <i class='bx bx-lock-alt'></i>
                     <input type="password" placeholder="Masukkan password anda" class="placeholder">
+                    <i class='bx bx-hide eye-hide'></i>
                 </div>
                 <input type="button" value="Masuk" class="button">
             </form>

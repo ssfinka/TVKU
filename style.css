@@ -31,7 +31,6 @@ body{
     transform: translateX(-50%); 
 }
 
-
 .container .form{
     padding: 20px;
 }
@@ -71,7 +70,7 @@ h5{
     margin-top: 8px;
     text-align: left;
     margin-bottom: 0;
-    color: #344054;
+    color: #667085;
     font-size: 14px;
     font-style: normal;
     font-family: "Inter", sans-serif;
@@ -140,43 +139,22 @@ h5{
     text-transform: none;
 }
 
-.input-email {
-    display: flex;
-    align-items: center;
-}
-.input-email input {
-    padding: 25px;
-    background-image: url('img/email.png');
-    background-size: 20px 20px;
-    background-repeat: no-repeat;
-    background-position: left center;
+.input-container {
+    position: relative;
+    margin-bottom: 10px;
 }
 
-.input-pass {
-    display: flex;
-    align-items: center;
-}
+.input-container i {
+    position: absolute;
+    top: 25%;
+    left: 10px;
+    color: #667085;
+}  
 
-.input-pass lock {
-    padding: 15px;
-    background-image: url('img/lock.png');
-    background-size: 20px 20px;
-    background-repeat: no-repeat;
-    background-position: left center;
-}
+.input-container .eye-hide {
+    left: 93%;
+} 
 
-.input-pass input {
-    padding: 15px;
-    background-image: url('admin/images/show.svg');
-    background-size: 20px 20px;
-    background-repeat: no-repeat;
-    background-position: right center;
-}
-
-.input-hide {
-    padding: 15px;
-    background-image: url('admin/images/hide.svg');
-    background-size: 20px 20px;
-    background-repeat: no-repeat;
-    background-position: right center;
+.input-container input {
+    padding-left: 35px;
 }
