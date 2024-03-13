@@ -13,7 +13,7 @@
 <body>
     <!--- START SIDEBAR--->
     <div class="sidebar-menu">
-        <nav>
+        <nav class="navbar">
             <ul>
                 <li class="logo">
                     <img src="img/tvku.png" alt="tvku">
@@ -21,45 +21,56 @@
                 <div class="search-box">
                     <input type="text" class="search-txt" placeholder="Search">
                     <a href="#" class="search-btn">
-                        <i class='bx bx-search'></i>
+                        <i class='bx bx-search '></i>
                     </a>
                 </div>
-                <li><a href="dashboard.html">
-                    <i class='bx bx-bar-chart'></i>
-                    <span class="nav-item">Dashboard</span>
-                </a></li>
+                <li>
+                    <a href="dashboard.html">
+                        <i class='bx bx-bar-chart'></i>
+                        <span class="nav-item">Dashboard</span>
+                        <span class="tooltip">Dashboard</span>
+                    </a>
+                </li>
                 <p>Kelola</p>
-                <li><a href="tugas.html">
-                    <i class='bx bx-layer'></i>
-                    <span class="nav-item">Tugas</span>
-                </a></li>
-                <li><a href="rekap.html">
-                    <i class='bx bx-file'></i>
-                    <span class="nav-item">Rekap</span>
-                </a></li>
-                <li class="settings"><a href="profile.html">
-                    <i class='bx bx-cog'></i>
-                    <span class="nav-item">Settings</span>
-                </a></li>
+                <li>
+                    <a href="tugas.html">
+                        <i class='bx bx-layer'></i>
+                        <span class="nav-item">Tugas</span>
+                        <span class="tooltip">Tugas</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="rekap.html">
+                        <i class='bx bx-file'></i>
+                        <span class="nav-item">Rekap</span>
+                        <span class="tooltip">Rekap</span>
+                    </a>
+                </li>
+                <li class="settings">
+                    <a href="profile.html">
+                        <i class='bx bx-cog'></i>
+                        <span class="nav-item">Pengaturan</span>
+                        <span class="tooltip">Pengaturan</span>
+                    </a>
+                </li>
                 <div class="line"></div>
                 <li class="user-wrapper">
-                    <img src="img/olivia.jpg" width="35px" height="35px">
-                     <div class="user-name">
-                        <h5>Olivia Rhye</h5>
-                        <small>olivia@untitledui.com</small>
-                    </div>
-                    <i class='bx bx-log-in'></i>
+                    <a href="#">
+                        <i class='bx bx-log-in'></i>
+                        <span class="nav-item">Logout</span>
+                        <span class="tooltip">Logout</span>
+                    </a>
                 </li>
             </ul>
         </nav>
-    </div>    
+    </div>  
     <!--- END SIDEBAR--->
 
     <!--- START HEADER--->
     <div class="main-content">
-        <header class="wrapper">
+        <header class="wrapper-profile">
             <h4>Profile</h4>
-            <div class="search-wrapper">
+            <div class="search-wrapper search-profile">
                 <i class='bx bx-search'></i>
                 <input type="search" placeholder="Search">
             </div>

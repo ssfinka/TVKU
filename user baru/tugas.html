@@ -21,31 +21,42 @@
                             <i class='bx bx-search '></i>
                         </a>
                     </div>
-                    <li><a href="dashboard.html">
-                        <i class='bx bx-bar-chart'></i>
-                        <span class="nav-item">Dashboard</span>
-                    </a></li>
+                    <li>
+                        <a href="dashboard.html">
+                            <i class='bx bx-bar-chart'></i>
+                            <span class="nav-item">Dashboard</span>
+                            <span class="tooltip">Dashboard</span>
+                        </a>
+                    </li>
                     <p>Kelola</p>
-                    <li><a href="tugas.html">
-                        <i class='bx bx-layer'></i>
-                        <span class="nav-item">Tugas</span>
-                    </a></li>
-                    <li><a href="rekap.html">
-                        <i class='bx bx-file'></i>
-                        <span class="nav-item">Rekap</span>
-                    </a></li>
-                    <li class="settings"><a href="profile.html">
-                        <i class='bx bx-cog'></i>
-                        <span class="nav-item">Settings</span>
-                    </a></li>
+                    <li>
+                        <a href="tugas.html">
+                            <i class='bx bx-layer'></i>
+                            <span class="nav-item">Tugas</span>
+                            <span class="tooltip">Tugas</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="rekap.html">
+                            <i class='bx bx-file'></i>
+                            <span class="nav-item">Rekap</span>
+                            <span class="tooltip">Rekap</span>
+                        </a>
+                    </li>
+                    <li class="settings">
+                        <a href="profile.html">
+                            <i class='bx bx-cog'></i>
+                            <span class="nav-item">Pengaturan</span>
+                            <span class="tooltip">Pengaturan</span>
+                        </a>
+                    </li>
                     <div class="line"></div>
                     <li class="user-wrapper">
-                        <img src="img/olivia.jpg" width="35px" height="35px">
-                         <div class="user-name">
-                            <h5>Olivia Rhye</h5>
-                            <small>olivia@untitledui.com</small>
-                        </div>
-                        <i class='bx bx-log-in'></i>
+                        <a href="#">
+                            <i class='bx bx-log-in'></i>
+                            <span class="nav-item">Logout</span>
+                            <span class="tooltip">Logout</span>
+                        </a>
                     </li>
                 </ul>
             </nav>
@@ -77,8 +88,8 @@
                     </div>
                     <div class="record-header">
                         <button class="filter">
-                            <p>More Filter</p>
-                            <i class='bx bx-filter-alt'></i>
+                            <p>Search</p>
+                            <i class='bx bx-search'></i>
                         </button>
                         <button id="tambahLaporan" class="add">
                             <p>Tambah Tugas</p>
@@ -88,15 +99,13 @@
             </div>
         <div class="content-page">
             <div class="title">
-                <h5>Daftar Tugas</h5>
+                <h5>Daftar Laporan</h5>
                 <p>100 laporan</p>
             </div>
             <table>
                   <tr>
                     <th>No</th>
                     <th>Tanggal</th>
-                    <th>Nama</th>
-                    <th>Nama Tugas</th>
                     <th style="text-align: center;">Deskripsi</th>
                     <th></th>
                     <th></th>
@@ -105,8 +114,6 @@
                   <tr>
                     <td>1</td>
                     <td>01 Januari 2024</td>
-                    <td><img src="img/olivia.jpg " width="30px" height="30px"><div class="name">Olivia Rhye</div></td>
-                    <td>Nama Tugas #1</td>
                     <td style="text-align: center;">Lorem ipsum dolor sit amet consectetur</td>
                     <td><i class='bx bx-show eye-show'></i></td>
                     <td><i class='bx bx-edit-alt'></i></td>
@@ -115,8 +122,6 @@
                   <tr>
                     <td style="background: #fff;">2</td>
                     <td style="background: #fff;">01 Januari 2024</td>
-                    <td style="background: #fff;"><img src="img/olivia.jpg " width="30px" height="30px"><div class="name">Olivia Rhye</div></td>
-                    <td style="background: #fff;">Nama Tugas #1</td>
                     <td style="background: #fff; text-align: center;">Lorem ipsum dolor sit amet consectetur</td>
                     <td style="background: #fff;"><i class='bx bx-show eye-show'></i></td>
                     <td style="background: #fff;"><i class='bx bx-edit-alt'></i></td>
@@ -125,8 +130,6 @@
                   <tr>
                     <td>3</td>
                     <td>01 Januari 2024</td>
-                    <td><img src="img/olivia.jpg " width="30px" height="30px"><div class="name">Olivia Rhye</div></td>
-                    <td>Nama Tugas #1</td>
                     <td style="text-align: center;">Lorem ipsum dolor sit amet consectetur</td>
                     <td><i class='bx bx-show eye-show'></i></td>
                     <td><i class='bx bx-edit-alt'></i></td>
@@ -135,8 +138,6 @@
                   <tr>
                     <td style="background: #fff;">4</td>
                     <td style="background: #fff;">01 Januari 2024</td>
-                    <td style="background: #fff;"><img src="img/olivia.jpg " width="30px" height="30px"><div class="name">Olivia Rhye</div></td>
-                    <td style="background: #fff;">Nama Tugas #1</td>
                     <td style="background: #fff; text-align: center;">Lorem ipsum dolor sit amet consectetur</td>
                     <td style="background: #fff;"><i class='bx bx-show eye-show'></i></td>
                     <td style="background: #fff;"><i class='bx bx-edit-alt'></i></td>
@@ -145,8 +146,6 @@
                   <tr>
                     <td>5</td>
                     <td>01 Januari 2024</td>
-                    <td><img src="img/olivia.jpg " width="30px" height="30px"><div class="name">Olivia Rhye</div></td>
-                    <td>Nama Tugas #1</td>
                     <td style="text-align: center;">Lorem ipsum dolor sit amet consectetur</td>
                     <td><i class='bx bx-show eye-show'></i></td>
                     <td><i class='bx bx-edit-alt'></i></td>
@@ -155,8 +154,6 @@
                   <tr>
                     <td style="background: #fff;">6</td>
                     <td style="background: #fff;">01 Januari 2024</td>
-                    <td style="background: #fff;"><img src="img/olivia.jpg " width="30px" height="30px"><div class="name">Olivia Rhye</div></td>
-                    <td style="background: #fff;">Nama Tugas #1</td>
                     <td style="background: #fff; text-align: center;">Lorem ipsum dolor sit amet consectetur</td>
                     <td style="background: #fff;"><i class='bx bx-show eye-show'></i></td>
                     <td style="background: #fff;"><i class='bx bx-edit-alt'></i></td>
@@ -165,8 +162,6 @@
                   <tr>
                     <td>7</td>
                     <td>01 Januari 2024</td>
-                    <td><img src="img/olivia.jpg " width="30px" height="30px"><div class="name">Olivia Rhye</div></td>
-                    <td>Nama Tugas #1</td>
                     <td style="text-align: center;">Lorem ipsum dolor sit amet consectetur</td>
                     <td><i class='bx bx-show eye-show'></i></td>
                     <td><i class='bx bx-edit-alt'></i></td>
@@ -175,8 +170,6 @@
                   <tr>
                     <td style="background: #fff;">8</td>
                     <td style="background: #fff;">01 Januari 2024</td>
-                    <td style="background: #fff;"><img src="img/olivia.jpg " width="30px" height="30px"><div class="name">Olivia Rhye</div></td>
-                    <td style="background: #fff;">Nama Tugas #1</td>
                     <td style="background: #fff; text-align: center;">Lorem ipsum dolor sit amet consectetur</td>
                     <td style="background: #fff;"><i class='bx bx-show eye-show'></i></td>
                     <td style="background: #fff;"><i class='bx bx-edit-alt'></i></td>
@@ -185,8 +178,6 @@
                   <tr>
                     <td>9</td>
                     <td>01 Januari 2024</td>
-                    <td><img src="img/olivia.jpg " width="30px" height="30px"><div class="name">Olivia Rhye</div></td>
-                    <td>Nama Tugas #1</td>
                     <td style="text-align: center;">Lorem ipsum dolor sit amet consectetur</td>
                     <td><i class='bx bx-show eye-show'></i></td>
                     <td><i class='bx bx-edit-alt'></i></td>
@@ -195,8 +186,6 @@
                   <tr>
                     <td style="background: #fff;">10</td>
                     <td style="background: #fff;">01 Januari 2024</td>
-                    <td style="background: #fff;"><img src="img/olivia.jpg " width="30px" height="30px"><div class="name">Olivia Rhye</div></td>
-                    <td style="background: #fff;">Nama Tugas #1</td>
                     <td style="background: #fff; text-align: center;">Lorem ipsum dolor sit amet consectetur</td>
                     <td style="background: #fff;"><i class='bx bx-show eye-show'></i></td>
                     <td style="background: #fff;"><i class='bx bx-edit-alt'></i></td>

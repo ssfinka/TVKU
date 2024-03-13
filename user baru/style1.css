@@ -18,7 +18,7 @@ body{
     display: flex;
 }
 
-ul{
+nav{
     position:fixed;
     top: 0;
     bottom: 0;
@@ -27,6 +27,30 @@ ul{
     background: white;
     width: 210px;
     box-shadow: 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-menu li .tooltip{
+    position: absolute;
+    top:-13px;
+    left:-35%;
+    z-index: 1;
+    background-color: white;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+    padding: 6px 10px;
+    font-size: 15px;
+    font-weight: 400;
+    border-radius: 5px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.sidebar-menu li:hover .tooltip{
+    opacity: 1;
+    pointer-events: auto;
+    transition: all 0.4s ease;
+    top:50%;
+    transform: translateY(-30%);
 }
 
 .search-box {
@@ -71,7 +95,7 @@ ul{
 .logo img{
     margin-top: 10px;
     margin-bottom: 5px;
-    padding-left: 10px;
+    margin-left: 50px;
     width: 90px;
     height: 50px;
 }
@@ -121,7 +145,7 @@ ul .bx{
 .line {
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     position: relative;
-    top: 425px;
+    top: 435px;
 }
 
 .user-wrapper{
@@ -132,22 +156,13 @@ ul .bx{
     align-items: center;
 }
 
-.user-wrapper img{
-    margin-left: 10px;
-    border-radius: 50%;
-    margin-right: 0.5rem;
-}
-
-.user-wrapper small{
-    display: inline-block;
-    color: grey;
-}
-
-.user-wrapper i{
+.user-wrapper .bx{
     position: relative;
-    top: -10px;
-    padding-right: 11px;
-    padding-bottom: 9px;
+    left: -5px;
+    width: 30px;
+    height: 20px;
+    font-size: 20px;
+    text-align: center;
 }
 
 /* HEADER */
@@ -303,7 +318,7 @@ header{
     width: 100%;
     margin-left: -3PX;
     min-height: 1px;
-    padding-right: 15px;
+    padding-right: 5px;
     padding-left: 15px;
 }
 
@@ -611,6 +626,11 @@ textarea {
     flex: 1 0 0;
 }
 
+.card-chart img .illustrations{
+    width: 150;
+    height: 77;
+}
+
 .text-number {
     align-self: stretch;
     color: var(--Gray-900, #101828);
@@ -629,6 +649,15 @@ textarea {
     align-items: center;
     gap: 8px;
     align-self: stretch;
+}
+
+.first-card {
+    padding-top: 54px;
+}
+
+.card-change .bx{
+    font-size: 25px;
+    color: rgb(98, 98, 98);
 }
 
 .change {
@@ -853,19 +882,38 @@ tr:nth-child(even) {
 
 @media only screen and (min-width: 600px) and (max-width:1110px){
     /* Adjust the main-content margin-left for smaller screens */
-    nav ul {
-        width: 8%;
+    .sidebar-menu nav{
+        width: 7%;
+    }
+    .sidebar-menu .navbar{
+        width: 10%;
     }
     nav ul li {
         padding-left: 10px;
         text-align: left;
     }
+    .sidebar-menu nav ul a:hover{
+        color: #1a48b3;
+    }
+    .sidebar-menu li .tooltip {
+        left: 25%;
+        top: -3px;
+        width: 100%;
+        transform: translateY(-50%); 
+    }
+    .sidebar-menu .tooltip{
+        opacity: 1;
+        pointer-events: auto;
+        transition: all 0.4s ease;
+        top:50%;
+        z-index: 4;
+    }
     .logo img{
-        margin-left: -13px;
+        margin-left: -5px;
         width: 70px;
         height: 40px;
     }
-    .sidebar-menu li span,
+    .sidebar-menu li .nav-item,
     nav ul p,
     .sidebar-menu .search-box{
         display: none;
@@ -878,12 +926,20 @@ tr:nth-child(even) {
         margin-right: 10px;
         z-index: 10;
     }
+    .container{
+        margin-left: -5%;
+    }
     .article{
-        margin-left: -40px;
+        margin-left: -100px;
     }
     header{
         width: 90%;
-        margin-left: -9%;
+        margin-left: -10%;
+        margin-right: 0;
+    }
+    .wrapper-profile{
+        width: 90%;
+        margin-left: -14%;
         margin-right: 0;
     }
     .search-box input[type="search"] {
@@ -892,7 +948,7 @@ tr:nth-child(even) {
     }
     .search-wrapper{
         margin-left: 0;
-        margin-right: -60%;
+        margin-right: -55%;
     }
     .line{
         display: none;
@@ -902,7 +958,7 @@ tr:nth-child(even) {
         display: none;
     }
     .user-wrapper i{
-        padding-left:15px;
+        padding-left:1px;
         color: rgb(91, 91, 91);
     }
     .sidebar-menu nav ul li.user-wrapper {
@@ -911,59 +967,60 @@ tr:nth-child(even) {
     }
 }
 
-@media only screen and (max-width: 600px) and (max-width:1110px){
-    /* Adjust the main-content margin-left for smaller screens */
-    nav ul {
-        width: 8%;
+@media only screen and (max-width: 600px) {
+    .sidebar-menu li span,
+    nav ul p,
+    .sidebar-menu .search-box,
+    .line,
+    .user-wrapper .user-name,
+    .user-wrapper img{
+        display: none;
     }
-    nav ul li {
-        padding-left: 10px;
-        text-align: left;
+    .sidebar-menu nav{
+        width:8%;
+    }
+    .sidebar-menu .navbar{
+        width:12%;
+    }
+    ul{
+        margin-left: 9px;
     }
     .logo img{
-        margin-left: -13px;
+        margin-left: -10px;
         width: 70px;
         height: 40px;
     }
-    .sidebar-menu li span,
-    nav ul p,
-    .sidebar-menu .search-box{
-        display: none;
+    .settings i{
+        padding-left: 10px;
     }
-    .sidebar-menu li i{
-        margin-bottom: -2px;
-    }
-    .main {
-        margin-left: -20%;
-        margin-right: 10px;
-        z-index: 10;
+    .user-wrapper i{
+        padding-left:1px;
     }
     header{
-        width: 91%;
-        margin-left: -9%;
+        width: 90%;
+        margin-left: -14%;
         margin-right: 0;
     }
-    .search-box input[type="search"] {
-        margin-left: 10px;
-        width: 10px; 
+    .wrapper-profile{
+        width: 90%;
+        margin-left: -17%;
+        margin-right: 0;
+    }
+    .search-profile{
+        margin-left: 27%;
     }
     .search-wrapper{
         margin-left: 0;
-        margin-right: -60%;
+        margin-right: -55%;
     }
-    .line{
-        display: none;
+    .avatar{
+        margin-left: 10px;
+        margin-right: -7px;
     }
-    .user-wrapper .user-name,
-    .user-wrapper img {
-        display: none;
+    .container{
+        margin-left: -21%;
     }
-    .user-wrapper i{
-        padding-left:15px;
-        color: rgb(91, 91, 91);
-    }
-    .sidebar-menu nav ul li.user-wrapper {
-        margin-top: 20px;
-        margin-bottom: 20px;
+    .article{
+        margin-left: -35%;
     }
 }
