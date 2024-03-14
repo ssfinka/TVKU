@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Link CSS external -->
+    <link rel="stylesheet" href="sidebar.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Link Font Awesome -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+
+    <!-- Font Inter  -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- JQuery  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+
+    <title>Rekap</title>
+</head>
+
+<body>
+    <input type="checkbox" id="check">
+    <!--header area start-->
+    <header>
+        <label for="check">
+          <i class='bx bx-menu' id="sidebar_btn"></i>
+        </label>
+        <div class="left_area">
+            <img src="img/tvku.png" class="mobile_profile_image" alt="">
+        </div>
+        <div class="right_area">
+            <img src="img/avatar-profile-photo.png" class="logout_btn" alt="">
+            <!-- <a href="#" class="logout_btn"><i class="fas fa-sign-out-alt"></i> Logout</a> -->
+        </div>
+    </header>
+    <!--header area end-->
+    <!--mobile navigation bar start-->
+    <div class="mobile_nav">
+        <div class="nav_bar">
+            <div class="input-container">
+                <i class="input-logo">
+                    <img src="img/search.svg" alt="" />
+                </i>
+                <input class="input-field" type="text" placeholder="Search" />
+            </div>
+            <i class="fa fa-bars nav_btn"></i>
+        </div>
+        <div class="mobile_nav_items">
+            <a href="dashboard.html"><i class='bx bx-bar-chart'></i><span>Dashboard</span></a>
+            <a href="tugas.html"><i class='bx bx-layer'></i><span>Tugas</span></a>
+                    <a href="rekap.html"><i class='bx bx-file'></i><span>Rekap</span></a>
+                    <a href="profile.html"><i class='bx bx-cog'></i><span>Pengaturan</span></a>
+        </div>
+    </div>
+    <!--mobile navigation bar end-->
+    <!--sidebar start-->
+    <div class="sidebar">
+        <div class="profile_info">
+            <div class="input-container">
+                <i class="input-logo">
+                    <img src="img/search.svg" alt="" />
+                </i>
+                <input class="input-field" type="text" placeholder="Search" />
+            </div>
+        </div>
+        <a href="dashboard.html"><i class='bx bx-bar-chart'></i><span>Dashboard</span></a>
+        <br>
+        <span class="judul">Kelola</span>
+        <a href="tugas.html"><i class='bx bx-layer'></i><span>Tugas</span></a>
+        <a href="rekap.html"><i class='bx bx-file'></i><span>Rekap</span></a>
+        <a href="profile.html"><i class='bx bx-cog'></i><span>Pengaturan</span></a>
+        <br>
+        <hr>
+        <a href="#"><i class='bx bx-log-in'></i><span>Logout</span></a>
+        <hr>
+    
+    </div>
+    <!--sidebar end-->
+
+    <!--- START CONTENT--->
+    <div class="content">
+        <div class="records">
+            <div class="record-header">
+                <div class="browse">
+                    <i class='bx bx-search'></i>
+                    <input type="search" placeholder="Search">
+                </div>
+                <div class="record-header">
+                    <button class="filter">
+                        <p>More Filter</p>
+                        <i class='bx bx-filter-alt'></i>
+                    </button>
+                    <button id="tambahLaporan" class="add">
+                        <p>Tambah Tugas</p>
+                    </button>
+                </div>
+            </div>
+        </div>
+    <div class="content-page">
+        <div class="title">
+            <h5>Daftar Tugas</h5>
+            <p>100 laporan</p>
+        </div>
+        <table>
+              <tr>
+                <th>No</th>
+                <th>Tanggal</th>
+                <th>Nama</th>
+                <th>Nama Tugas</th>
+                <th style="text-align: center;">Deskripsi</th>
+                <th></th>
+                <th></th>
+                <th></th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>01 Januari 2024</td>
+                <td><img src="img/olivia.jpg " width="30px" height="30px"><div class="name">Olivia Rhye</div></td>
+                <td>Nama Tugas #1</td>
+                <td style="text-align: center;">Lorem ipsum dolor sit amet consectetur</td>
+                <td><i class='bx bx-show eye-show'></i></td>
+                <td><i class='bx bx-edit-alt'></i></td>
+                <td><i class='bx bx-trash'></i></td>
+              </tr>
+              <tr>
+                <td style="background: #fff;">2</td>
+                <td style="background: #fff;">01 Januari 2024</td>
+                <td style="background: #fff;"><img src="img/olivia.jpg " width="30px" height="30px"><div class="name">Olivia Rhye</div></td>
+                <td style="background: #fff;">Nama Tugas #1</td>
+                <td style="background: #fff; text-align: center;">Lorem ipsum dolor sit amet consectetur</td>
+                <td style="background: #fff;"><i class='bx bx-show eye-show'></i></td>
+                <td style="background: #fff;"><i class='bx bx-edit-alt'></i></td>
+                <td style="background: #fff;"><i class='bx bx-trash'></i></td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>01 Januari 2024</td>
+                <td><img src="img/olivia.jpg " width="30px" height="30px"><div class="name">Olivia Rhye</div></td>
+                <td>Nama Tugas #1</td>
+                <td style="text-align: center;">Lorem ipsum dolor sit amet consectetur</td>
+                <td><i class='bx bx-show eye-show'></i></td>
+                <td><i class='bx bx-edit-alt'></i></td>
+                <td><i class='bx bx-trash'></i></td>
+              </tr>
+              <tr>
+                <td style="background: #fff;">4</td>
+                <td style="background: #fff;">01 Januari 2024</td>
+                <td style="background: #fff;"><img src="img/olivia.jpg " width="30px" height="30px"><div class="name">Olivia Rhye</div></td>
+                <td style="background: #fff;">Nama Tugas #1</td>
+                <td style="background: #fff; text-align: center;">Lorem ipsum dolor sit amet consectetur</td>
+                <td style="background: #fff;"><i class='bx bx-show eye-show'></i></td>
+                <td style="background: #fff;"><i class='bx bx-edit-alt'></i></td>
+                <td style="background: #fff;"><i class='bx bx-trash'></i></td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>01 Januari 2024</td>
+                <td><img src="img/olivia.jpg " width="30px" height="30px"><div class="name">Olivia Rhye</div></td>
+                <td>Nama Tugas #1</td>
+                <td style="text-align: center;">Lorem ipsum dolor sit amet consectetur</td>
+                <td><i class='bx bx-show eye-show'></i></td>
+                <td><i class='bx bx-edit-alt'></i></td>
+                <td><i class='bx bx-trash'></i></td>
+              </tr>
+              <tr>
+                <td style="background: #fff;">6</td>
+                <td style="background: #fff;">01 Januari 2024</td>
+                <td style="background: #fff;"><img src="img/olivia.jpg " width="30px" height="30px"><div class="name">Olivia Rhye</div></td>
+                <td style="background: #fff;">Nama Tugas #1</td>
+                <td style="background: #fff; text-align: center;">Lorem ipsum dolor sit amet consectetur</td>
+                <td style="background: #fff;"><i class='bx bx-show eye-show'></i></td>
+                <td style="background: #fff;"><i class='bx bx-edit-alt'></i></td>
+                <td style="background: #fff;"><i class='bx bx-trash'></i></td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>01 Januari 2024</td>
+                <td><img src="img/olivia.jpg " width="30px" height="30px"><div class="name">Olivia Rhye</div></td>
+                <td>Nama Tugas #1</td>
+                <td style="text-align: center;">Lorem ipsum dolor sit amet consectetur</td>
+                <td><i class='bx bx-show eye-show'></i></td>
+                <td><i class='bx bx-edit-alt'></i></td>
+                <td><i class='bx bx-trash'></i></td>
+              </tr>
+              <tr>
+                <td style="background: #fff;">8</td>
+                <td style="background: #fff;">01 Januari 2024</td>
+                <td style="background: #fff;"><img src="img/olivia.jpg " width="30px" height="30px"><div class="name">Olivia Rhye</div></td>
+                <td style="background: #fff;">Nama Tugas #1</td>
+                <td style="background: #fff; text-align: center;">Lorem ipsum dolor sit amet consectetur</td>
+                <td style="background: #fff;"><i class='bx bx-show eye-show'></i></td>
+                <td style="background: #fff;"><i class='bx bx-edit-alt'></i></td>
+                <td style="background: #fff;"><i class='bx bx-trash'></i></td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td>01 Januari 2024</td>
+                <td><img src="img/olivia.jpg " width="30px" height="30px"><div class="name">Olivia Rhye</div></td>
+                <td>Nama Tugas #1</td>
+                <td style="text-align: center;">Lorem ipsum dolor sit amet consectetur</td>
+                <td><i class='bx bx-show eye-show'></i></td>
+                <td><i class='bx bx-edit-alt'></i></td>
+                <td><i class='bx bx-trash'></i></td>
+              </tr>
+              <tr>
+                <td style="background: #fff;">10</td>
+                <td style="background: #fff;">01 Januari 2024</td>
+                <td style="background: #fff;"><img src="img/olivia.jpg " width="30px" height="30px"><div class="name">Olivia Rhye</div></td>
+                <td style="background: #fff;">Nama Tugas #1</td>
+                <td style="background: #fff; text-align: center;">Lorem ipsum dolor sit amet consectetur</td>
+                <td style="background: #fff;"><i class='bx bx-show eye-show'></i></td>
+                <td style="background: #fff;"><i class='bx bx-edit-alt'></i></td>
+                <td style="background: #fff;"><i class='bx bx-trash'></i></td>
+              </tr>
+        </table>
+        <div class="pagination">
+            <button class="button-gray" style="width: fit-content;"><i class='bx bx-left-arrow-alt' ></i>Prev</button>
+            <div style="display: flex; gap: 4px;">
+                <button class="button-gray">1</button>
+                <button class="button-gray">2</button>
+                <button class="button-gray">3</button>
+                <button class="button-gray">4</button>
+                <button class="button-gray">5</button>
+            </div>
+            <button class="button-gray" style="width: fit-content;">Next<i class='bx bx-right-arrow-alt'></i></button>
+        </div>
+    </div>
+    </div>
+    <!--- END CONTENT--->
+
+    <!-- TAMBAH LAPORAN -->
+    <div id="modal" class="modal">
+        <div class="modal-wrap">
+            <div class="modal-header">
+                <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 8px; flex: 1 0 0;">
+                    <div class="text-18">Tambah Tugas</div>
+                    <div class="text-14">Masukan pekerjaan dengan lengkap</div>
+                </div>
+                <div style="display: flex; align-items: center; gap: 12px;">
+                    <button id="close" class="button-gray">Batal</button>
+                    <button class="button-base">Simpan</button>
+                </div>
+            </div>
+            <div class="modal-content">
+                <div class="input-base">
+                    <label for="" class="label">Nama Tugas</label>
+                    <div class="input-container container-label">
+                        <input class="input-field" type="text" placeholder="Masukkan nama tugas">
+                    </div>
+                </div>
+                <div class="input-base">
+                    <label for="" class="label">Tanggal</label>
+                    <div class="input-container container-label">
+                        <input class="input-field" type="datetime-local" placeholder="Masukan jadwal">
+                    </div>
+                </div>
+                <div class="input-base">
+                    <label for="" class="label">Deskripsi</label>
+                    <div class="">
+                        <textarea name="" id="" cols="65" rows="30"></textarea>
+                    </div>
+                </div>
+                <div class="input-base">
+                    <label for="" class="label">Status Pekerjaan</label>
+                    <div class="input-container container-label">
+                        <select name="status-pekerjaan" id="status" class="input-field">
+                            <option value="-">--Pilih Status--</option>
+                            <option value="belum dikerjakan">Belum Dikerjakan</option>
+                            <option value="dalam proses">Dalam Proses</option>
+                            <option value="selesai">Selesai</option>
+                        </select>
+                    </div>
+                </div>   
+            </div>
+        </div>
+    </div>
+</main>
+
+<script>
+    // Get the modal
+    var modal = document.getElementById("modal");
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("tambahLaporan");
+
+    // Get the <span> element that closes the modal
+        var batal = document.getElementById("close");
+
+    // When the user clicks on the button, open the modal
+    btn.onclick = function() {
+    modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+        batal.onclick = function() {
+             modal.style.display = "none";
+        }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+    }
+</script>
+</div>
+
+    <!-- Optional JavaScript -->
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.nav_btn').click(function() {
+                $('.mobile_nav_items').toggleClass('active');
+            });
+        });
+    </script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
