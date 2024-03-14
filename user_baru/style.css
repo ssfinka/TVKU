@@ -145,7 +145,7 @@
 }
 
 .content main{
-  margin-left: -2%;
+  margin-left: 1%;
 }
 
 .content{
@@ -271,8 +271,9 @@ p{
 textarea {
     height: 50px;
     display: flex;
-    padding: 10px 14px;
+    padding: 10px 15px;
     align-items: center;
+    margin-left: 10px;
     gap: 8px;
     flex: 1 0 0;
     align-self: stretch;
@@ -414,6 +415,10 @@ td img{
   line-height: 20px; /* 142.857% */
 }
 
+.input-base .label{
+  margin-left: 10px;
+}
+
 .input-base {
   display: block;
   flex-direction: column;
@@ -456,6 +461,22 @@ td img{
   height: 33px;
   width: 93%;
   margin-left: 10px;
+  padding: 1px 17px;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+  border-radius: 6px;
+  border: 1px solid rgb(232, 229, 229);
+  background: var(--White, #FFF);
+}
+
+.container-mobile {
+  display: flex;
+  height: 33px;
+  width: 90%;
+  margin-left: 10px;
+  margin-right: 10px;
   padding: 1px 17px;
   gap: 10px;
   justify-content: center;
@@ -642,20 +663,28 @@ td img{
   }
 
   .record-header .filter{
-    width: 80%;
+    width: 105px;
+    margin-right: -3px;
+  }
+
+  .record-header .add{
+    margin-left: 10px;
   }
 
   .records .record-header{
-    width: 57%;
+    width: 50%;
+  }
+
+  .input-label{
+    margin-left:35px;
+    width: 80%;
   }
 
   .record-header{
     width: 97%;
+    margin-left: -3px;
   }
 
-  .record-header .browse{
-    display: none;
-  }
   .content .records2{
     width: 100%;
   }
