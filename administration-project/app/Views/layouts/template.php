@@ -9,8 +9,10 @@
     <!-- Link CSS external -->
     <link rel="stylesheet" href="/css/sidebar.css">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/styleUser.css">
 
     <!-- Link Font Awesome -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
 
     <!-- Font Inter  -->

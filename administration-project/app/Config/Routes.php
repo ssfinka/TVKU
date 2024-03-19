@@ -16,3 +16,10 @@ $routes->get('/hapususers/(:any)', 'UserController::hapus/$1');
 $routes->get('/editlaporan', 'LaporanController::edit');
 $routes->post('/tambahusers', 'UserController::tambahusers');
 $routes->post('/savelaporan', 'LaporanController::save');
+
+// user
+$routes->get('/', 'PunyaUserController::index');
+$routes->get('/dashboard', 'PunyaUserController::index');
+$routes->get('/tugas', 'PunyaUserController::tugas');
+$routes->get('/rekap', 'PunyaUserController::rekap');
+$routes->get('/profile', 'PunyaUserController::profileUser');
