@@ -301,6 +301,20 @@ table img {
   align-items: center;
 }
 
+textarea {
+  height: 50px;
+  display: flex;
+  padding: 10px 15px;
+  align-items: center;
+  margin-left: 10px;
+  gap: 8px;
+  flex: 1 0 0;
+  align-self: stretch;
+  border-radius: 8px;
+  border: 1px solid var(--Gray-300, #D0D5DD);
+  background: var(--White, #FFF);
+}
+
 .span-info {
   display: flex;
   width: fit-content;
@@ -388,6 +402,10 @@ table img {
 
 .edit-laporan .button-base {
   margin-left: 80px;
+}
+
+.profil-admin img {
+  width: 100px;
 }
 @media screen and (max-width: 780px) {
   .container ul li {

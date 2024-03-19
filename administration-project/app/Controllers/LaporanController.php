@@ -37,8 +37,38 @@ class LaporanController extends BaseController
         endif;
     }
 
-    public function edit()
+    public function edit($id)
     {
-        return view('pages/edit_laporan');
+        $result = $this->LaporanModel->find($id);
+
+        $data = [
+            'result' => $result
+        ];
+        return view('pages/edit_laporan', $data);
+    }
+
+    public function save()
+    {
+        // $gambar = $this->request->getFile('gambar'); // ambil inputan gambar
+        // if ($gambar->getError() == 4) : // jika terdapat error di gambar
+        //     $namabaru = $this->request->getVar('gambarlama'); // gunakan gambar lama
+        // else : // jika benar
+        //     $namabaru = $gambar->getRandomName(); // dapatkan nama random dari gambar
+        //     $gambar->move('img', $namabaru); // lalu pindahkan gambar ke folder img dengan nama gambar baru yang ada di 
+        //     unlink('img/' . $this->request->getVar('gambarlama'));
+        // endif;
+
+        $data = [
+            'id' => $this->request->getVar('id'),
+            'nama' => $this->request->getVar('nama'),
+            'image' => $this->request->getVar('image'),
+            'tanggal' => $this->request->getVar('tanggal'),
+            'nama_tugas' => $this->request->getVar('nama_tugas'),
+            'deskripsi' => $this->request->getVar('deskripsi'),
+        ];
+
+        $this->LaporanModel->save($data); // update data
+
+        return redirect()->to('/laporan');
     }
 }

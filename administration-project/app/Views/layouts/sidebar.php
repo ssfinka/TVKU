@@ -29,6 +29,12 @@
         <a href="<?= base_url(); ?>laporan"><i class="far fa-file-alt"></i><span>Laporan
                 <a href="<?= base_url(); ?>users"><i class="far fa-user"></i><span>Users</span></a>
                 <a href="<?= base_url(); ?>setting"><i class="fas fa-cog"></i><span>Settings</span></a>
+
+                
+            <a href="<?= base_url(); ?>/dashboardUser"><i class='bx bx-bar-chart'></i><span>Dashboard</span></a>
+            <a href="<?= base_url(); ?>/tugas"><i class='bx bx-layer'></i><span>Laporan</span></a>
+                    <a href="<?= base_url(); ?>/rekap"><i class='bx bx-file'></i><span>Rekap</span></a>
+                    <a href="<?= base_url(); ?>/profile"><i class='bx bx-cog'></i><span>Pengaturan</span></a>
     </div>
 </div>
 <!--mobile navigation bar end-->
@@ -48,6 +54,12 @@
     <a href="<?= base_url(); ?>laporan"><i class="far fa-file-alt"></i><span>Laporan</span></a>
     <a href="<?= base_url(); ?>users"><i class="far fa-user"></i><span>Users</span></a>
     <a href="<?= base_url(); ?>setting"><i class="fas fa-cog"></i><span>Settings</span></a>
+    
+    <!-- User -->
+    <a href="<?= base_url(); ?>/dashboardUser"><i class='bx bx-bar-chart'></i><span>Dashboard</span></a>
+    <a href="<?= base_url(); ?>/tugas"><i class='bx bx-layer'></i><span>Laporan</span></a>
+        <a href="<?= base_url(); ?>/rekap"><i class='bx bx-file'></i><span>Rekap</span></a>
+        <a href="<?= base_url(); ?>/profile"><i class='bx bx-cog'></i><span>Pengaturan</span></a>
     <br><br><br><br>
     <a href="#"><i class="fas fa-sign-out-alt"></i><span>Logout</span></a>
 

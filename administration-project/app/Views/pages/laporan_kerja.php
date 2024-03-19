@@ -53,7 +53,7 @@
                                     <td><?= $rs['deskripsi']; ?></td>
                                     <td style="width: 100px;">
                                         <img src="/img/eye.svg" alt="">
-                                        <img src="/img/edit-2.svg" alt="">
+                                        <a href="<?= base_url() . 'editlaporan/' . $rs['id']; ?>"><img src="/img/edit-2.svg" alt=""></a>
                                         <a href="<?= base_url() . 'hapus/' . $rs['id']; ?>"><img src="/img/trash.svg" alt=""></a>
                                     </td>
                             </tr>

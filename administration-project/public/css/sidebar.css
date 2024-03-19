@@ -63,6 +63,10 @@ header {
   border-right: 1px solid rgba(0, 0, 0, .3);
 }
 
+.profile_info .container-search{
+  width: 80%;
+}
+
 .profile_info {
   display: flex;
   flex-direction: column;

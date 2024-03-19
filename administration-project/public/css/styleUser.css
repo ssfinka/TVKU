@@ -631,7 +631,16 @@ td img{
   align-self: stretch;
 }
 
+.card-dashboard{
+  display: flex; flex-direction: row; margin-top: 15px
+}
+
 @media screen and (max-width: 780px) {
+
+  .card-dashboard{
+    display: flex; flex-direction: column;
+  }
+
   .container ul li {
     display: block;
     width: 100%;

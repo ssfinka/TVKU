@@ -6,7 +6,7 @@ class PunyaUserController extends BaseController
 {
     public function index()
     {
-        return view('pagesUser/dashboard');
+        return view('/pagesUser/dashboardUser');
     }
 
     public function tugas()
@@ -21,6 +21,6 @@ class PunyaUserController extends BaseController
 
     public function profileUser()
     {
-        return view('pagesUser/profile');
+        return view('pagesUser/profileUser');
     } 
 }

@@ -8,8 +8,8 @@
 
     <!-- Link CSS external -->
     <link rel="stylesheet" href="/css/sidebar.css">
+    <!-- <link rel="stylesheet" href="/css/styleUser.css"> -->
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/styleUser.css">
 
     <!-- Link Font Awesome -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -27,8 +27,8 @@
 </head>
 
 <body>
-    <?= $this->include('layouts/sidebar'); ?>
-    <?= $this->include('layouts/navbar'); ?>
+<?= $this->include('layouts/navbar'); ?>
+<?= $this->include('layouts/sidebar'); ?>
 
     <!-- Optional JavaScript -->
     <script type="text/javascript">
