@@ -8,7 +8,6 @@
 
     <!-- Link CSS external -->
     <link rel="stylesheet" href="/css/sidebar.css">
-    <!-- <link rel="stylesheet" href="/css/styleUser.css"> -->
     <link rel="stylesheet" href="/css/style.css">
 
     <!-- Link Font Awesome -->

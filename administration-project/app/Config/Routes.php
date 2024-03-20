@@ -22,7 +22,10 @@ $routes->post('/register', 'AuthController::register');
 
 // user
 // $routes->get('/', 'PunyaUserController::index');
-$routes->get('/dashboard-user', 'PunyaUserController::index');
-$routes->get('/tugas', 'PunyaUserController::tugas');
-$routes->get('/rekap', 'PunyaUserController::rekap');
-$routes->get('/profileUser', 'PunyaUserController::profileUser');
+$routes->get('/dashboardUser', 'DashboardUserController::index');
+$routes->get('/tugas', 'TugasController::index');
+$routes->get('/rekap', 'RekapUserController::index');
+$routes->get('/profileUser', 'profileController::profileUser');
+$routes->get('/hapus/(:any)', 'TugasController::hapus/$1');
+$routes->get('/editUser/(:any)', 'TugasController::edit/$1');
+$routes->post('/simpan', 'TugasController::simpanlaporan');

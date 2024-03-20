@@ -6,12 +6,12 @@
     <div class="container">
       <div class="col-md-12">
         <ul>
-          <div class="col-md-4">
+          <div class="col-md-4 first-card">
             <div class="card">
                 <div class="card-header">
                     <div class="text-header">Selamat datang, Olivia!</div>
                 </div>
-                <div class="number-chart">
+                <div class="number-chart calendar">
                     <div class="number-badge">
                         <div class="text-header">
                             <div class="card-change first-card">
@@ -26,7 +26,7 @@
                 </div>
             </div>
           </div>
-          <li class="first-chart">
+          <li class="first-chart first-chart-user">
             <div class="col-md-4">
               <div class="card">
                 <div class="card-header">
@@ -62,7 +62,7 @@
               </div>
             </div>
           </li>
-          <li>
+          <li class="second-chart">
             <div class="col-md-4">
               <div class="card">
                 <div class="card-header">

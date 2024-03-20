@@ -138,8 +138,20 @@
   list-style: none;
 }
 
+.container-user{
+  overflow-y: hidden;
+}
+
 .first-chart {
   margin-left: -40px;
+}
+
+.first-chart-user {
+  margin-left: -37px;
+}
+
+.second-chart {
+  margin-left: 30px;
 }
 
 .table {
@@ -168,7 +180,7 @@
 
 table tr td {
   text-align: center;
-  padding: 5px 10px;
+  padding: 15px 10px;
 }
 
 .label {
@@ -188,6 +200,15 @@ table tr td {
 
 .col-md-12 {
   width: 100%;
+}
+
+.first-card{
+  margin-left: -35px;
+  margin-bottom: 25px;
+}
+
+.calendar {
+  margin-left: 30px;
 }
 
 .button-gray {
@@ -304,7 +325,7 @@ table img {
 textarea {
   height: 50px;
   display: flex;
-  padding: 10px 15px;
+  padding: 10px 20px;
   align-items: center;
   margin-left: 10px;
   gap: 8px;
@@ -313,6 +334,10 @@ textarea {
   border-radius: 8px;
   border: 1px solid var(--Gray-300, #D0D5DD);
   background: var(--White, #FFF);
+}
+
+.input-deskripsi{
+  margin-left: 20px;
 }
 
 .span-info {
@@ -351,7 +376,7 @@ textarea {
 .modal-wrap {
   position: absolute;
   left: 50%;
-  top: 60%;
+  top: 50%;
   transform: translate(-50%, -50%);
   display: flex;
   /* width: 665px; */
@@ -407,11 +432,20 @@ textarea {
 .profil-admin img {
   width: 100px;
 }
+
 @media screen and (max-width: 780px) {
   .container ul li {
     display: block;
     width: 100%;
     margin-bottom: 10px;
+  }
+
+  .container-user{
+    overflow-x: auto;
+  }
+
+  .frame-gray{
+    width: 100%;
   }
 
   .modal-wrap {
@@ -420,6 +454,18 @@ textarea {
 
   .first-chart {
     margin-left: 0px;
+  }
+
+  .first-chart-user {
+    margin-left: -35px;
+  }
+
+  .second-chart {
+    margin-left: -35px;
+  }
+
+  .input-user{
+    margin-left: 3px;
   }
 
   .hiding-input {

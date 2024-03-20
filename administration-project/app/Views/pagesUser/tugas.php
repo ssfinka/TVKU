@@ -3,20 +3,18 @@
 <?= $this->section('content'); ?>
 <main class="main">
         <!-- <p style="margin: 20px 0px 40px 150px">Dashboard</p> -->
-        <div class="container">
+        <div class="container container-user">
             <div class="col-md-12">
                 <div class="frame-gray">
                     <div class="input-container" style="width: 75%">
-                        <i class="input-logo">
-                            <img src="images/search.svg" alt="" />
-                        </i>
+                        <i class='bx bx-search'></i>
                         <input class="input-field" type="text" placeholder="Search" />
                     </div>
                     <button class="button-gray" style="width: fit-content">
-                        <img src="images/filter.svg" alt="" />More Filter
+                        <img src="img/filter.svg" alt="" />More Filter
                     </button>
                     <button id="tambahLaporan" class="button-base">
-                        <img src="images/plus.svg" alt="" />Tambah Pengguna
+                        <img src="img/plus.svg" alt="" />Tambah Laporan
                     </button>
                 </div>
             </div>
@@ -26,105 +24,33 @@
                     <div class="card-table">
                         <div class="card-header">
                             <div class="text-header">
-                                Anggota Tim <span class="span-info">100 Anggota</span>
+                                Daftar Tugas<span class="span-info">100 Laporan</span>
                             </div>
                         </div>
-                        <div class="table">
-                            <table>
-                                <tr>
-                                    <th>No</th>
-                                    <th>Tanggal Lahir</th>
-                                    <th>Deskripsi</th>
-                                    <th></th>
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td>01-01-2000</td>
-                                    <td>username@email.com</td>
-                                    <td>081234567890</td>
-                                    <td>Admin</td>
-                                    <td><img src="images/eye.svg" alt="" /></td>
-    
-                                </tr>
-                                <tr class="highlighted-row">
-                                    <td>2</td>
-                                    <td>01-01-2000</td>
-                                    <td>username@email.com</td>
-                                    <td>081234567890</td>
-                                    <td>Admin</td>
-                                    <td><img src="images/eye.svg" alt="" /></td>
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td>01-01-2000</td>
-                                    <td>username@email.com</td>
-                                    <td>081234567890</td>
-                                    <td>Admin</td>
-                                    <td><img src="images/eye.svg" alt="" /></td>
-    
-                                </tr>
-                                <tr class="highlighted-row">
-                                    <td>4</td>
-                                    <td>01-01-2000</td>
-                                    <td>username@email.com</td>
-                                    <td>081234567890</td>
-                                    <td>Admin</td>
-                                    <td><img src="images/eye.svg" alt="" /></td>
-                                </tr>
-                                <tr>
-                                    <td>5</td>
-                                    <td>01-01-2000</td>
-                                    <td>username@email.com</td>
-                                    <td>081234567890</td>
-                                    <td>Admin</td>
-                                    <td><img src="images/eye.svg" alt="" /></td>
-    
-                                </tr>
-                                <tr class="highlighted-row">
-                                    <td>6</td>
-                                    <td>01-01-2000</td>
-                                    <td>username@email.com</td>
-                                    <td>081234567890</td>
-                                    <td>Admin</td>
-                                    <td><img src="images/eye.svg" alt="" /></td>
-                                </tr>
-                                <tr>
-                                    <td>7</td>
-                                    <td>01-01-2000</td>
-                                    <td>username@email.com</td>
-                                    <td>081234567890</td>
-                                    <td>Admin</td>
-                                    <td><img src="images/eye.svg" alt="" /></td>
-    
-                                </tr>
-                                <tr class="highlighted-row">
-                                    <td>8</td>
-                                    <td>01-01-2000</td>
-                                    <td>username@email.com</td>
-                                    <td>081234567890</td>
-                                    <td>Admin</td>
-                                    <td><img src="images/eye.svg" alt="" /></td>
-                                </tr>
-                                <tr>
-                                    <td>9</td>
-                                    <td>01-01-2000</td>
-                                    <td>username@email.com</td>
-                                    <td>081234567890</td>
-                                    <td>Admin</td>
-                                    <td><img src="images/eye.svg" alt="" /></td>
-    
-                                </tr>
-                                <tr class="highlighted-row">
-                                    <td>10</td>
-                                    <td>01-01-2000</td>
-                                    <td>username@email.com</td>
-                                    <td>081234567890</td>
-                                    <td>Admin</td>
-                                    <td><img src="images/eye.svg" alt="" /></td>
-                                </tr>
-                            </table>
-                        </div>
-                        <div class="pagination">
+                <div class="table">
+                <table>
+                  <tr>
+                    <th>No</th>
+                    <th>Tanggal</th>
+                    <th>Deskripsi</th>
+                    <th class="button-crud"></th>
+                  </tr>
+                  <?php $i = 1; ?>
+                  <?php foreach ($result as $rs) : ?>
+                  <tr>
+                    <td><?= $i++; ?></td>
+                    <td><?= $rs['tanggal']; ?></td>
+                    <td><?= $rs['deskripsi']; ?></td>
+                    <td style="width: 100px;">
+                            <i class='bx bx-show eye-show'></i>
+                            <a href="<?= base_url() . 'editUser/' . $rs['id']; ?>"><i class='bx bx-edit-alt' style="color: black; margin-left:20px;"></i></a>
+                            <a href="<?= base_url() . 'hapus/' . $rs['id']; ?>"><i class='bx bx-trash' style="color: black; margin-left:20px;"></i></a>
+                    </td>
+                  </tr>
+                  <?php endforeach; ?>
+              </table>
+            </div>
+            <div class="pagination">
                             <button class="button-gray" style="width: fit-content">
                                 <img src="images/arrow-left.svg" alt="" />Prev
                             </button>
@@ -150,11 +76,13 @@
             <div class="modal-header">
                 <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 8px; flex: 1 0 0;">
                     <div class="text-18">Tambah Tugas</div>
-                    <div class="text-14">Masukan pekerjaan dengan lengkap</div>
+                    <div class="text-14">Masukan data tugas dengan lengkap</div>
                 </div>
                 <div style="display: flex; align-items: center; gap: 12px;">
                     <button id="close" class="button-gray">Batal</button>
-                    <button class="button-base">Simpan</button>
+                    <form action="/tambahusers" method="POST" enctype="multipart/form-data">
+                        <?= csrf_field(); ?>
+                        <button class="button-base">Simpan</button>
                 </div>
             </div>
             <div class="modal-content">
@@ -172,25 +100,14 @@
                 </div>
                 <div class="input-base">
                     <label for="" class="label">Deskripsi</label>
-                    <div class="">
-                        <textarea name="" id="" cols="50" rows="10"></textarea>
-                    </div>
-                </div>
-                <div class="input-base">
-                    <label for="" class="label">Status Pekerjaan</label>
-                    <div class="input-container container-label">
-                        <select name="status-pekerjaan" id="status" class="input-field">
-                            <option value="-">--Pilih Status--</option>
-                            <option value="belum dikerjakan">Belum Dikerjakan</option>
-                            <option value="dalam proses">Dalam Proses</option>
-                            <option value="selesai">Selesai</option>
-                        </select>
+                    <div class="input-deskripsi">
+                        <textarea name="" id="" cols="45" rows="10"></textarea>
                     </div>
                 </div>   
             </div>
         </div>
     </div>
-    </main>
+</main>
 <script>
     // Get the modal
     var modal = document.getElementById('modal');
