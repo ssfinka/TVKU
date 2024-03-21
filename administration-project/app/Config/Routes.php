@@ -21,11 +21,12 @@ $routes->post('/postlogin', 'AuthController::postlogin');
 $routes->post('/register', 'AuthController::register');
 
 // user
-// $routes->get('/', 'PunyaUserController::index');
+$routes->get('/', 'AuthController::index');
 $routes->get('/dashboardUser', 'DashboardUserController::index');
 $routes->get('/tugas', 'TugasController::index');
 $routes->get('/rekap', 'RekapUserController::index');
 $routes->get('/profileUser', 'profileController::profileUser');
 $routes->get('/hapus/(:any)', 'TugasController::hapus/$1');
 $routes->get('/editUser/(:any)', 'TugasController::edit/$1');
-$routes->post('/simpan', 'TugasController::simpanlaporan');
+$routes->post('/simpanLaporan', 'TugasController::simpan');
+$routes->post('/tambahtugas', 'TugasController::tambahtugas');

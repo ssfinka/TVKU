@@ -80,28 +80,34 @@
                 </div>
                 <div style="display: flex; align-items: center; gap: 12px;">
                     <button id="close" class="button-gray">Batal</button>
-                    <form action="/tambahusers" method="POST" enctype="multipart/form-data">
+                    <form action="/tambahtugas" method="POST" enctype="multipart/form-data">
                         <?= csrf_field(); ?>
                         <button class="button-base">Simpan</button>
                 </div>
             </div>
             <div class="modal-content">
                 <div class="input-base">
+                    <label for="" class="label">Nama</label>
+                    <div class="input-container container-label">
+                        <input class="input-field" type="text" placeholder="Masukkan nama anda" name="nama_pegawai">
+                    </div>
+                </div>
+                <div class="input-base">
                     <label for="" class="label">Nama Tugas</label>
                     <div class="input-container container-label">
-                        <input class="input-field" type="text" placeholder="Masukkan nama tugas">
+                        <input class="input-field" type="text" placeholder="Masukkan nama tugas" name="nama_tugas">
                     </div>
                 </div>
                 <div class="input-base">
                     <label for="" class="label">Tanggal</label>
                     <div class="input-container container-label">
-                        <input class="input-field" type="datetime-local" placeholder="Masukan jadwal">
+                        <input class="input-field" type="datetime-local" placeholder="Masukan jadwal" name="tanggal">
                     </div>
                 </div>
                 <div class="input-base">
                     <label for="" class="label">Deskripsi</label>
                     <div class="input-deskripsi">
-                        <textarea name="" id="" cols="45" rows="10"></textarea>
+                        <textarea name="deskripsi" id="" cols="45" rows="10"></textarea>
                     </div>
                 </div>   
             </div>

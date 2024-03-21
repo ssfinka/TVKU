@@ -231,6 +231,21 @@ table tr td {
   margin-left: 35px;
 }
 
+.button-down{
+  font-family: "Inter", sans-serif;
+  display:flex;
+  position: relative;
+  border-radius: 6px;
+  padding: 10px;
+  background: #fff;
+  border: 1px solid var(--Gray-200, #d8d8da);
+  height: 33px;
+  margin-right: -2px;
+  height: 40px;
+  padding-left: 7px;
+  align-items: center;
+}
+
 .button-base {
   display: flex;
   align-items: flex-start;

@@ -47,16 +47,17 @@ class TugasController extends BaseController
         endif;
     }
 
-    public function tambahusers()
+    public function tambahtugas()
     {
         $data = [
-            'nama' => $this->request->getVar('nama_tugas'),
+            'nama' => $this->request->getVar('nama_pegawai'),
+            'nama_tugas' => $this->request->getVar('nama_tugas'),
             'tanggal' => $this->request->getVar('tanggal'),
             'deskripsi' => $this->request->getVar('deskripsi'),
         ];
-        $this->UserModel->insert($data); // Insert data dari $data ke database
+        $this->LaporanModel->insert($data); // Insert data dari $data ke database
 
-        return redirect()->to('/users'); // kembalikan ke routes /users
+        return redirect()->to('/tugas');
     }
 
     public function simpanLaporan()

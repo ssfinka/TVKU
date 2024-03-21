@@ -12,6 +12,7 @@
                     </i>
                     <input class="input-field" type="text" placeholder="Search">
                 </div>
+                <button class="button-down">PDF</button>
                 <div class="input-container">
                     <input class="input-field" type="date" placeholder="tanggal mulai">
                 </div>
@@ -36,90 +37,21 @@
                     <th>No</th>
                     <th>Tanggal</th>
                     <th>Deskripsi</th>
-                    <th></th>
-                    <th></th>
-                    <th></th>
+                    <th class="button-crud"></th>
                   </tr>
+                  <?php $i = 1; ?>
+                  <?php foreach ($result as $rs) : ?>
                   <tr>
-                    <td>1</td>
-                    <td>01 Januari 2024</td>
-                    <td>Lorem ipsum dolor sit amet consectetur</td>
-                    <td><i class='bx bx-show eye-show'></i></td>
-                    <td><i class='bx bx-edit-alt'></i></td>
-                    <td><i class='bx bx-trash'></i></td>
+                    <td><?= $i++; ?></td>
+                    <td><?= $rs['tanggal']; ?></td>
+                    <td><?= $rs['deskripsi']; ?></td>
+                    <td style="width: 100px;">
+                            <i class='bx bx-show eye-show'></i>
+                            <a href="<?= base_url() . 'editUser/' . $rs['id']; ?>"><i class='bx bx-edit-alt' style="color: black; margin-left:20px;"></i></a>
+                            <a href="<?= base_url() . 'hapus/' . $rs['id']; ?>"><i class='bx bx-trash' style="color: black; margin-left:20px;"></i></a>
+                    </td>
                   </tr>
-                  <tr>
-                    <td>2</td>
-                    <td>01 Januari 2024</td>
-                    <td>Lorem ipsum dolor sit amet consectetur</td>
-                    <td><i class='bx bx-show eye-show'></i></td>
-                    <td><i class='bx bx-edit-alt'></i></td>
-                    <td><i class='bx bx-trash'></i></td>
-                  </tr>
-                  <tr>
-                    <td>3</td>
-                    <td>01 Januari 2024</td>
-                    <td>Lorem ipsum dolor sit amet consectetur</td>
-                    <td><i class='bx bx-show eye-show'></i></td>
-                    <td><i class='bx bx-edit-alt'></i></td>
-                    <td><i class='bx bx-trash'></i></td>
-                  </tr>
-                  <tr>
-                    <td>4</td>
-                    <td>01 Januari 2024</td>
-                    <td>Lorem ipsum dolor sit amet consectetur</td>
-                    <td><i class='bx bx-show eye-show'></i></td>
-                    <td><i class='bx bx-edit-alt'></i></td>
-                    <td><i class='bx bx-trash'></i></td>
-                  </tr>
-                  <tr>
-                    <td>5</td>
-                    <td>01 Januari 2024</td>
-                    <td>Lorem ipsum dolor sit amet consectetur</td>
-                    <td><i class='bx bx-show eye-show'></i></td>
-                    <td><i class='bx bx-edit-alt'></i></td>
-                    <td><i class='bx bx-trash'></i></td>
-                  </tr>
-                  <tr>
-                    <td>6</td>
-                    <td>01 Januari 2024</td>
-                    <td>Lorem ipsum dolor sit amet consectetur</td>
-                    <td><i class='bx bx-show eye-show'></i></td>
-                    <td><i class='bx bx-edit-alt'></i></td>
-                    <td><i class='bx bx-trash'></i></td>
-                  </tr>
-                  <tr>
-                    <td>7</td>
-                    <td>01 Januari 2024</td>
-                    <td>Lorem ipsum dolor sit amet consectetur</td>
-                    <td><i class='bx bx-show eye-show'></i></td>
-                    <td><i class='bx bx-edit-alt'></i></td>
-                    <td><i class='bx bx-trash'></i></td>
-                  </tr>
-                  <tr>
-                    <td>8</td>
-                    <td>01 Januari 2024</td>
-                    <td>Lorem ipsum dolor sit amet consectetur</td>
-                    <td><i class='bx bx-show eye-show'></i></td>
-                    <td><i class='bx bx-edit-alt'></i></td>
-                    <td><i class='bx bx-trash'></i></td>
-                  </tr>
-                  <tr>
-                    <td>9</td>
-                    <td>01 Januari 2024</td>
-                    <td>Lorem ipsum dolor sit amet consectetur</td>
-                    <td><i class='bx bx-show eye-show'></i></td>
-                    <td><i class='bx bx-edit-alt'></i></td>
-                    <td><i class='bx bx-trash'></i></td>
-                  </tr>
-                  <tr>
-                    <td>10</td>
-                    <td>01 Januari 2024</td>
-                    <td>Lorem ipsum dolor sit amet consectetur</td>
-                    <td><i class='bx bx-show eye-show'></i></td>
-                    <td><i class='bx bx-edit-alt'></i></td>
-                    <td><i class='bx bx-trash'></i></td>
-                  </tr>
+                  <?php endforeach; ?>
               </table>
             </div>
             <div class="pagination">
