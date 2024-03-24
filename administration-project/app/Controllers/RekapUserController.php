@@ -26,6 +26,16 @@ class RekapUserController extends BaseController
         return view('pagesUser/rekap', $data);
     }
 
+    public function detail($id)
+    {
+        $result = $this->LaporanModel->find($id);
+
+        $data = [
+            'result' => $result
+        ];
+        return view('pagesUser/detail', $data);
+    }
+    
     public function edit($id)
     {
         $result = $this->LaporanModel->find($id);
@@ -33,7 +43,7 @@ class RekapUserController extends BaseController
         $data = [
             'result' => $result
         ];
-        return view('pagesUser/editUser', $data);
+        return view('pagesUser/editrekap', $data);
     }
 
     public function hapus($id = null)
@@ -45,5 +55,20 @@ class RekapUserController extends BaseController
         else :
             
         endif;
+    }
+
+    public function save()
+    {
+        $data = [
+            'id' => $this->request->getVar('id'),
+            'nama' => $this->request->getVar('nama'),
+            'nama_tugas' => $this->request->getVar('nama_tugas'),
+            'tanggal' => $this->request->getVar('tanggal'),
+            'deskripsi' => $this->request->getVar('deskripsi'),
+        ];
+
+        $this->LaporanModel->save($data);
+
+        return redirect()->to('/rekap');
     }
 }

@@ -14,10 +14,10 @@
                 </div>
                 <button class="button-down">PDF</button>
                 <div class="input-container">
-                    <input class="input-field" type="date" placeholder="tanggal mulai">
+                    <input class="input-field" type="date"  placeholder="Tanggal Mulai">
                 </div>
                 <div class="input-container">
-                    <input class="input-field" type="date" placeholder="tanggal selesai">
+                    <input class="input-field" type="date" placeholder="Tanggal Selesai">
                 </div>
                 <!-- <button class="button-gray" style="width: fit-content;"><img src="/img/download-cloud.svg" alt="">download</button> -->
             </div>
@@ -46,9 +46,9 @@
                     <td><?= $rs['tanggal']; ?></td>
                     <td><?= $rs['deskripsi']; ?></td>
                     <td style="width: 100px;">
-                            <i class='bx bx-show eye-show'></i>
-                            <a href="<?= base_url() . 'editUser/' . $rs['id']; ?>"><i class='bx bx-edit-alt' style="color: black; margin-left:20px;"></i></a>
-                            <a href="<?= base_url() . 'hapus/' . $rs['id']; ?>"><i class='bx bx-trash' style="color: black; margin-left:20px;"></i></a>
+                            <a href="<?= base_url() . 'detail/' . $rs['id']; ?>"><i class='bx bx-show eye-show' style="color: black;"></i></a>
+                            <a href="<?= base_url() . 'editrekap/' . $rs['id']; ?>"><i class='bx bx-edit-alt' style="color: black; margin-left:20px;"></i></a>
+                            <a href="<?= base_url() . 'hapusrekap/' . $rs['id']; ?>"><i class='bx bx-trash' style="color: black; margin-left:20px;"></i></a>
                     </td>
                   </tr>
                   <?php endforeach; ?>

@@ -22,11 +22,17 @@ $routes->post('/register', 'AuthController::register');
 
 // user
 $routes->get('/', 'AuthController::index');
+$routes->get('/logout', 'AuthController::logout');
 $routes->get('/dashboardUser', 'DashboardUserController::index');
 $routes->get('/tugas', 'TugasController::index');
 $routes->get('/rekap', 'RekapUserController::index');
+$routes->post('/rekap', 'RekapUserController::index');
 $routes->get('/profileUser', 'profileController::profileUser');
-$routes->get('/hapus/(:any)', 'TugasController::hapus/$1');
+$routes->get('/hapuslaporan/(:any)', 'TugasController::hapus/$1');
+$routes->get('/hapusrekap/(:any)', 'RekapUserController::hapus/$1');
 $routes->get('/editUser/(:any)', 'TugasController::edit/$1');
-$routes->post('/simpanLaporan', 'TugasController::simpan');
+$routes->get('/editrekap/(:any)', 'RekapUserController::edit/$1');
+$routes->get('/detail/(:any)', 'TugasController::detail/$1');
+$routes->post('/simpanlaporan', 'TugasController::save');
+$routes->post('/simpanrekap', 'RekapUserController::save');
 $routes->post('/tambahtugas', 'TugasController::tambahtugas');

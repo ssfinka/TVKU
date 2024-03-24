@@ -59,7 +59,7 @@
     <a href="<?= base_url(); ?>tugas"><i class='bx bx-layer'></i><span>Laporan</span></a>
         <a href="<?= base_url(); ?>rekap"><i class='bx bx-file'></i><span>Rekap</span></a>
     <br><br><br><br>
-    <a href="#"><i class="fas fa-sign-out-alt"></i><span>Logout</span></a>
+    <a href="<?= base_url(); ?>logout"><i class="fas fa-sign-out-alt"></i><span>Logout</span></a>
 
 </div>
 <!--sidebar end-->

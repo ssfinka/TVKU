@@ -155,7 +155,7 @@
 }
 
 .table {
-  overflow-x: auto;
+  overflow-x: hidden;
 }
 
 .table table {
@@ -244,6 +244,11 @@ table tr td {
   height: 40px;
   padding-left: 7px;
   align-items: center;
+}
+
+.input-number{
+  font-family: "Inter", sans-serif;
+  font-size: 50px;
 }
 
 .button-base {
@@ -338,6 +343,7 @@ table img {
 }
 
 textarea {
+  font-family: "Inter", sans-serif;
   height: 50px;
   display: flex;
   padding: 10px 20px;
@@ -424,6 +430,15 @@ textarea {
   align-self: stretch;
 }
 
+.input-base .label-name{
+  margin-left: 80px;
+}
+
+.button-back{
+  margin-top: -30px;
+  margin-left: 80px;
+}
+
 .modal-content .input-base {
   width: 100%;
 }
@@ -497,6 +512,16 @@ textarea {
 
   .edit-laporan .button-base {
     margin-left: 30px;
+  }
+
+  .button-back{
+    margin-top: -20px;
+    margin-left: 30px;
+  }
+
+  textarea {
+    padding: 10px 80px;
+    margin-left: 27px;
   }
 }
 

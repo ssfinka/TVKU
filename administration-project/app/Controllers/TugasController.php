@@ -26,6 +26,16 @@ class TugasController extends BaseController
         return view('pagesUser/tugas', $data);
     }
 
+    public function detail($id)
+    {
+        $result = $this->LaporanModel->find($id);
+
+        $data = [
+            'result' => $result
+        ];
+        return view('pagesUser/detail', $data);
+    }
+
     public function edit($id)
     {
         $result = $this->LaporanModel->find($id);
@@ -33,7 +43,7 @@ class TugasController extends BaseController
         $data = [
             'result' => $result
         ];
-        return view('pagesUser/editUser', $data);
+        return view('pagesUser/editlaporan', $data);
     }
 
     public function hapus($id = null)
@@ -60,15 +70,17 @@ class TugasController extends BaseController
         return redirect()->to('/tugas');
     }
 
-    public function simpanLaporan()
+    public function save()
     {
         $data = [
             'id' => $this->request->getVar('id'),
+            'nama' => $this->request->getVar('nama'),
+            'nama_tugas' => $this->request->getVar('nama_tugas'),
             'tanggal' => $this->request->getVar('tanggal'),
             'deskripsi' => $this->request->getVar('deskripsi'),
         ];
 
-        $this->LaporanModel->simpanLaporan($data); // update data
+        $this->LaporanModel->save($data);
 
         return redirect()->to('/tugas');
     }

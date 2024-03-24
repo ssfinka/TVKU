@@ -55,4 +55,9 @@ class AuthController extends BaseController
 
         return redirect()->to('/'); // kembalikan ke routes '/'
     }
+
+    public function logout()
+    {  
+        return redirect()->to('/');
+    }
 }

@@ -42,9 +42,9 @@
                     <td><?= $rs['tanggal']; ?></td>
                     <td><?= $rs['deskripsi']; ?></td>
                     <td style="width: 100px;">
-                            <i class='bx bx-show eye-show'></i>
+                            <a href="<?= base_url() . 'detail/' . $rs['id']; ?>"><i class='bx bx-show eye-show' style="color: black;"></i></a>
                             <a href="<?= base_url() . 'editUser/' . $rs['id']; ?>"><i class='bx bx-edit-alt' style="color: black; margin-left:20px;"></i></a>
-                            <a href="<?= base_url() . 'hapus/' . $rs['id']; ?>"><i class='bx bx-trash' style="color: black; margin-left:20px;"></i></a>
+                            <a href="<?= base_url() . 'hapuslaporan/' . $rs['id']; ?>"><i class='bx bx-trash' style="color: black; margin-left:20px;"></i></a>
                     </td>
                   </tr>
                   <?php endforeach; ?>
