@@ -20,17 +20,31 @@ class AuthController extends BaseController
         $db = \Config\Database::connect();
     }
 
+    public function setting()
+    {
+        $query = $this->AkunModel->findAll();
+        $data = [
+            'result' => $query
+        ];
+        // dd($data['result']);
+        return view('pages/profile_admin', $data);
+    }
+
     public function postlogin()
     {
         $email = $this->request->getVar('email');
         $password = $this->request->getVar('password');
 
-        $log = $this->AkunModel->getData($email);
 
-        if ($password == $log->password) {
-            return redirect()->to('/dashboard');
-        } else {
+        $log = $this->AkunModel->getData($email);
+        if ($log == null) {
             return redirect()->to('/');
+        } else {
+            if ($password == $log->password) {
+                return redirect()->to('/dashboard');
+            } else {
+                return redirect()->to('/');
+            }
         }
 
         // if (password_verify($password, $log->password)) {
@@ -54,6 +68,25 @@ class AuthController extends BaseController
         $this->AkunModel->insert($data); // Insert data dari $data ke database
 
         return redirect()->to('/'); // kembalikan ke routes '/'
+    }
+    
+    public function edit()
+    {
+        $data = [
+            'id' => 1,
+            'nama' => $this->request->getVar('nama'),
+            'email' => $this->request->getVar('email'),
+            'tanggal_lahir' => $this->request->getVar('tanggal_lahir'),
+            'password' => $this->request->getVar('password'),
+            'no_telp' => $this->request->getVar('no_telp'),
+            'username' => $this->request->getVar('username'),
+        ];
+
+        dd($data);
+
+        $this->AkunModel->save($data); // update data
+
+        return redirect()->to('/laporan');
     }
 
     public function logout()

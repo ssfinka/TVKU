@@ -6,7 +6,7 @@
     <div class="container">
         <div class="col-md-12">
             <div class="frame-gray">
-                <div class="input-container" style="width: 75%">
+                <!-- <div class="input-container" style="width: 75%">
                     <i class="input-logo">
                         <img src="/img/search.svg" alt="" />
                     </i>
@@ -14,7 +14,7 @@
                 </div>
                 <button class="button-gray" style="width: fit-content">
                     <img src="/img/filter.svg" alt="" />More Filter
-                </button>
+                </button> -->
                 <button id="tambahLaporan" class="button-base">
                     <img src="/img/plus.svg" alt="" />Tambah Pengguna
                 </button>
@@ -30,52 +30,41 @@
                         </div>
                     </div>
                     <div class="table">
-                        <table>
-                            <tr>
-                                <th>No</th>
-                                <th>Nama</th>
-                                <th>Tanggal Lahir</th>
-                                <th>Email</th>
-                                <th>No. Telp</th>
-                                <th>Peran</th>
-                                <th></th>
-                            </tr>
-                            <tr>
-                                <?php $i = 1; ?>
-                                <?php foreach ($result as $rs) : ?>
-                                    <td><?= $i++; ?></td>
-                                    <td>
-                                        <div class="table-text-wrapper">
-                                            <img class="table-image" src="/img/<?= $rs['image']; ?>" alt="" />
-                                            <?= $rs['nama']; ?>
-                                        </div>
-                                    </td>
-                                    <td><?= $rs['tanggal_lahir']; ?></td>
-                                    <td><?= $rs['email']; ?></td>
-                                    <td><?= $rs['no_telp']; ?></td>
-                                    <td><?= $rs['peran']; ?></td>
-                                    <td>
-                                        <img src="/img/eye.svg" alt="" />
-                                        <a href="<?= base_url() . 'hapususers/' . $rs['id']; ?>"><img src="/img/trash.svg" alt=""></a>
-                                    </td>
-                            </tr>
-                        <?php endforeach; ?>
+                        <table id="myTable" class="display">
+                            <thead>
+                                <tr>
+                                    <th>No</th>
+                                    <th>Nama</th>
+                                    <th>Tanggal Lahir</th>
+                                    <th>Email</th>
+                                    <th>No. Telp</th>
+                                    <th>Peran</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <?php $i = 1; ?>
+                                    <?php foreach ($result as $rs) : ?>
+                                        <td><?= $i++; ?></td>
+                                        <td>
+                                            <div class="table-text-wrapper">
+                                                <img class="table-image" src="/img/<?= $rs['image']; ?>" alt="" />
+                                                <?= $rs['nama']; ?>
+                                            </div>
+                                        </td>
+                                        <td><?= $rs['tanggal_lahir']; ?></td>
+                                        <td><?= $rs['email']; ?></td>
+                                        <td><?= $rs['no_telp']; ?></td>
+                                        <td><?= $rs['peran']; ?></td>
+                                        <td style="width: 80px; margin: 0; padding: 0;">
+                                        <a href="<?= base_url() . 'detailuser/' . $rs['id']; ?>"><img src="/img/eye.svg" alt=""></a>
+                                            <a href="<?= base_url() . 'hapususers/' . $rs['id']; ?>"><img src="/img/trash.svg" alt=""></a>
+                                        </td>
+                                </tr>
+                            <?php endforeach; ?>
+                            </tbody>
                         </table>
-                    </div>
-                    <div class="pagination">
-                        <button class="button-gray" style="width: fit-content">
-                            <img src="/img/arrow-left.svg" alt="" />Prev
-                        </button>
-                        <div style="display: flex; gap: 1px">
-                            <button class="button-gray">1</button>
-                            <button class="button-gray">2</button>
-                            <button class="button-gray">3</button>
-                            <button class="button-gray">4</button>
-                            <button class="button-gray">5</button>
-                        </div>
-                        <button class="button-gray" style="width: fit-content">
-                            <img src="/img/arrow-right.svg" alt="" />Next
-                        </button>
                     </div>
                 </div>
             </div>

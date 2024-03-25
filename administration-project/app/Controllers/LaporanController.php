@@ -21,9 +21,20 @@ class LaporanController extends BaseController
     {
         $query = $this->LaporanModel->findAll();
         $data = [
-            'result' => $query
+            'result' => $query,
+            // 'pager' => $this->LaporanModel->pager
         ];
         return view('pages/laporan_kerja', $data);
+    }
+
+    public function dashboard()
+    {
+        $query = $this->LaporanModel->findAll();
+        $data = [
+            'result' => $query,
+            // 'pager' => $this->UserModel->pager
+        ];
+        return view('pages/dashboard_admin', $data);
     }
 
     public function hapus($id = null)
@@ -45,6 +56,16 @@ class LaporanController extends BaseController
             'result' => $result
         ];
         return view('pages/edit_laporan', $data);
+    }
+
+    public function detail($id)
+    {
+        $result = $this->LaporanModel->find($id);
+
+        $data = [
+            'result' => $result
+        ];
+        return view('pages/detail_laporan', $data);
     }
 
     public function save()

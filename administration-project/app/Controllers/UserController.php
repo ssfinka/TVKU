@@ -21,7 +21,8 @@ class UserController extends BaseController
     {
         $query = $this->UserModel->findAll();
         $data = [
-            'result' => $query
+            'result' => $query,
+            // 'pager' => $this->UserModel->pager
         ];
         
         return view('pages/users_admin', $data);
@@ -61,5 +62,15 @@ class UserController extends BaseController
         else :
             
         endif;
+    }
+
+    public function detail($id)
+    {
+        $result = $this->UserModel->find($id);
+
+        $data = [
+            'result' => $result
+        ];
+        return view('pages/detail_user', $data);
     }
 }

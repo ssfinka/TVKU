@@ -7,81 +7,71 @@
             <div style="display: flex; width: 100%; align-items: center; gap: 24px;">
                 <img src="/img/avatar-profile-photo.png" alt="">
                 <div style="display: flex; padding-top: 32px; flex-direction: column; justify-content: center; align-items: flex-start; gap: 20px; flex: 1 0 0;">
-                    <div class="text-number">Olivia Rhye</div>
-                    <div class="text-16">@olivia</div>
+                    <div class="text-number"><?= $result[0]['nama']; ?></div>
                 </div>
             </div>
 
+
             <div class="form-input">
                 <div class="col-md-6 left-input" style="display: flex; flex-direction: column; align-items: flex-s rt; gap: 32px; flex: 1 0 0;">
-                    <div class="input-base">
-                        <label for="" class="label">Nama Karyawan</label>
-                        <div class="input-container">
-                            <input class="input-field" type="text" placeholder="Masukan nama Lengkap">
+                    <form action="/editprofil" method="POST" enctype="multipart/form-data">
+                        <div class="input-base">
+                            <label for="" class="label">Tanggal Lahir</label>
+                            <div class="input-container">
+                                <input class="input-field" type="date" value="<?= $result[0]['tanggal_lahir']; ?>" name="tanggal_lahir">
+                            </div>
                         </div>
-                    </div>
-                    <div class="input-base">
-                        <label for="" class="label">Tanggal Lahir</label>
-                        <div class="input-container">
-                            <input class="input-field" type="date" placeholder="DD/MM/YYYY">
+                        <div class="input-base">
+                            <label for="" class="label">No telp</label>
+                            <div class="input-container">
+                                <input class="input-field" type="number" value="<?= $result[0]['no_telp']; ?>" name="no_telp">
+                            </div>
                         </div>
-                    </div>
-                    <div class="input-base">
-                        <label for="" class="label">No telp</label>
-                        <div class="input-container">
-                            <input class="input-field" type="text" placeholder="08xxxxxxxxxxxxxxx">
+                        <div class="input-base">
+                            <label for="" class="label">Email</label>
+                            <div class="input-container">
+                                <input class="input-field" type="email" value="<?= $result[0]['email']; ?>" name="email">
+                            </div>
                         </div>
-                    </div>
-                    <div class="input-base">
-                        <label for="" class="label">Email</label>
-                        <div class="input-container">
-                            <input class="input-field" type="email" placeholder="user@email.com">
+                        <div class="input-base">
+                            <label for="" class="label">Password</label>
+                            <div class="input-container">
+                                <input class="input-field" type="password" value="<?= $result[0]['password']; ?>" name="password">
+                            </div>
                         </div>
-                    </div>
-                    <div class="input-base hiding-input">
-                        <label for="" class="label">Username</label>
-                        <div class="input-container">
-                            <input class="input-field" type="text" placeholder="masukan username">
+                        <div class="input-base hiding-input">
+                            <label for="" class="label">Nama Karyawan</label>
+                            <div class="input-container">
+                                <input class="input-field" type="text" value="<?= $result[0]['nama']; ?>" readonly>
+                            </div>
                         </div>
-                    </div>
-                    <div class="input-base hiding-input">
-                        <label for="" class="label">Password</label>
-                        <div class="input-container">
-                            <input class="input-field" type="password" placeholder="min 8 digit">
+                        <div class="input-base hiding-input">
+                            <label for="" class="label">Username</label>
+                            <div class="input-container">
+                                <input class="input-field" type="text" value="<?= $result[0]['username']; ?>" name="username">
+                            </div>
                         </div>
-                    </div>
-                    <div class="input-base hiding-input">
-                        <label for="" class="label">Masukan Ulang Password</label>
-                        <div class="input-container">
-                            <input class="input-field" type="password" placeholder="min 8 digit">
-                        </div>
-                    </div>
                 </div>
                 <div class="col-md-6 right-input">
                     <div class="input-base">
                         <label for="" class="label">Username</label>
                         <div class="input-container">
-                            <input class="input-field" type="text" placeholder="masukan username">
+                            <input class="input-field" type="text" value="<?= $result[0]['username']; ?>" readonly>
                         </div>
                     </div>
                     <div class="input-base">
-                        <label for="" class="label">Password</label>
+                        <label for="" class="label">Nama Karyawan</label>
                         <div class="input-container">
-                            <input class="input-field" type="password" placeholder="min 8 digit">
-                        </div>
-                    </div>
-                    <div class="input-base">
-                        <label for="" class="label">Masukan Ulang Password</label>
-                        <div class="input-container">
-                            <input class="input-field" type="password" placeholder="min 8 digit">
+                            <input class="input-field" type="text" value="<?= $result[0]['nama']; ?>" name="nama" readonly>
                         </div>
                     </div>
                 </div>
             </div>
+
             <div style="display: flex; align-items: flex-start; gap: 16px;align-self: stretch;">
-                    <button id="close" class="button-gray">Batal</button>
-                    <button class="button-base">Simpan</button>
-                </div>
+                <button class="button-base" style="margin-left: 35px; margin-top: -40px;">Simpan</button>
+            </div>
+            </form>
         </div>
     </div>
 </main>

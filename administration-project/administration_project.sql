@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 16, 2024 at 06:48 PM
+-- Generation Time: Mar 19, 2024 at 10:28 PM
 -- Server version: 10.4.19-MariaDB
 -- PHP Version: 8.0.6
 
@@ -42,33 +42,6 @@ INSERT INTO `account` (`id`, `nama`, `email`, `password`) VALUES
 (1, 'Master Admin', 'masteradmin@gmail.com', 'master'),
 (3, 'Admin 1', 'adminproject1@hotmail.com', 'admin1'),
 (4, 'Admin 2', 'adminproject2@gmail.com', 'admin2');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `dashboard`
---
-
-CREATE TABLE `dashboard` (
-  `id` int(11) NOT NULL,
-  `image` varchar(200) NOT NULL,
-  `nama` varchar(100) NOT NULL,
-  `status` varchar(20) NOT NULL,
-  `role` varchar(50) NOT NULL,
-  `pekerjaan` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `dashboard`
---
-
-INSERT INTO `dashboard` (`id`, `image`, `nama`, `status`, `role`, `pekerjaan`) VALUES
-(1, 'avatar.png', 'Alfreds Futterkiste', 'Active', 'Product Desainer', 4),
-(2, 'avatar.png', 'Alfreds Futterkiste', 'Active', 'Product Desainer', 4),
-(3, 'avatar.png', 'Alfreds Futterkiste', 'Active', 'Product Desainer', 4),
-(4, 'avatar.png', 'Alfreds Futterkiste', 'Active', 'Product Desainer', 4),
-(5, 'avatar.png', 'Alfreds Futterkiste', 'Active', 'Product Desainer', 4),
-(6, 'avatar.png', 'Alfreds Futterkiste', 'Active', 'Product Desainer', 4);
 
 -- --------------------------------------------------------
 
@@ -127,7 +100,9 @@ INSERT INTO `users` (`id`, `image`, `nama`, `tanggal_lahir`, `email`, `no_telp`,
 (8, 'avatar.png', 'Alfreds Futterkiste', '2000-01-01', 'username@email.com', '081234567890', 'Admin'),
 (9, 'avatar.png', 'Alfreds Futterkiste', '2000-01-01', 'username@email.com', '081234567890', 'Admin'),
 (10, 'avatar.png', 'Alfreds Futterkiste', '2000-01-01', 'username@email.com', '081234567890', 'Admin'),
-(12, 'avatar.png', 'Ini user percobaan', '2008-06-17', 'userpercobaan1@gmail.com', '089842323798', 'admin');
+(12, 'avatar.png', 'Ini user percobaan', '2008-06-17', 'userpercobaan1@gmail.com', '089842323798', 'admin'),
+(13, 'avatar.png', 'Ini user percobaan', '2024-03-10', 'wdw@gmail.com', '0888888', 'karyawan'),
+(14, 'avatar.png', 'Ini user percobaan', '2024-03-10', 'wdw@gmail.com', '0888888', 'karyawan');
 
 --
 -- Indexes for dumped tables
@@ -137,12 +112,6 @@ INSERT INTO `users` (`id`, `image`, `nama`, `tanggal_lahir`, `email`, `no_telp`,
 -- Indexes for table `account`
 --
 ALTER TABLE `account`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `dashboard`
---
-ALTER TABLE `dashboard`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -168,12 +137,6 @@ ALTER TABLE `account`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT for table `dashboard`
---
-ALTER TABLE `dashboard`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
-
---
 -- AUTO_INCREMENT for table `laporan`
 --
 ALTER TABLE `laporan`
@@ -183,7 +146,7 @@ ALTER TABLE `laporan`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -102,47 +102,34 @@
             </div>
           </div>
           <div class="table">
-            <table>
-              <tr>
-                <th>No</th>
-                <th>Nama</th>
-                <th>Status</th>
-                <th>Role</th>
-                <th>Pekerjaan</th>
-                <th></th>
-              </tr>
-              <tr>
-                <?php $i = 1; ?>
-                <?php foreach ($result as $rs) : ?>
-                  <td><?= $i++; ?></td>
-                  <td>
-                    <div class="table-avatar table-text-wrapper">
-                      <img class="table-image" src="/img/<?= $rs['image']; ?>" alt="" />
-                      <?= $rs['nama']; ?>
-                    </div>
-                  </td>
-                  <td><span class="span-success"><?= $rs['status']; ?></span></td>
-                  <td><?= $rs['role']; ?></td>
-                  <td><?= $rs['pekerjaan']; ?></td>
-                  <td><img src="/img/eye.svg" alt="" /></td>
-              </tr>
-            <?php endforeach; ?>
+            <table id="myTable" class="display">
+              <thead>
+                <tr>
+                  <th>No</th>
+                  <th>Nama</th>
+                  <th>Nama Tugas</th>
+                  <th>Deskripsi</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <?php $i = 1; ?>
+                  <?php foreach ($result as $rs) : ?>
+                    <td><?= $i++; ?></td>
+                    <td>
+                      <div class="table-avatar table-text-wrapper">
+                        <img class="table-image" src="/img/<?= $rs['image']; ?>" alt="" />
+                        <?= $rs['nama']; ?>
+                      </div>
+                    </td>
+                    <td><span class="span-success"><?= $rs['nama_tugas']; ?></span></td>
+                    <td><?= $rs['deskripsi']; ?></td>
+                    <td><a href="<?= base_url() . 'detaillaporan/' . $rs['id']; ?>"><img src="/img/eye.svg" alt=""></a></td>
+                </tr>
+              <?php endforeach; ?>
+              </tbody>
             </table>
-          </div>
-          <div class="pagination">
-            <button class="button-gray" style="width: fit-content">
-              <img src="/img/arrow-left.svg" alt="" />Prev
-            </button>
-            <div style="display: flex; gap: 1px">
-              <button class="button-gray">1</button>
-              <button class="button-gray">2</button>
-              <button class="button-gray">3</button>
-              <button class="button-gray">4</button>
-              <button class="button-gray">5</button>
-            </div>
-            <button class="button-gray" style="width: fit-content">
-              <img src="/img/arrow-right.svg" alt="" />Next
-            </button>
           </div>
         </div>
       </div>
