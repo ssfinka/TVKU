@@ -42,19 +42,6 @@
                     <th>Deskripsi</th>
                     <th class="button-crud"></th>
                   </tr>
-                  <?php
-
-                  if(isset($_POST['filter_tgl'])){
-                    $mulai = $_POST['tgl_mulai'];
-                    $selesai = $_POST['tgl_selesai'];
-
-                    if ($mulai=null || $selesai=null) {
-                        $ambildatalaporan = mysqli_query($daftar,"select * form")#
-                    }
-                    
-                  }
-
-                  ?>
                   <?php $i = 1; ?>
                   <?php foreach ($result as $rs) : ?>
                   <tr>
