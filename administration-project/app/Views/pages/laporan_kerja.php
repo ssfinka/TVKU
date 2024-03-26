@@ -4,17 +4,6 @@
 
 <main class="main">
     <div class="container">
-        <div class="col-md-12">
-            <div class="frame-gray">
-                <div class="input-container">
-                    <input class="input-field" type="date" placeholder="tanggal mulai">
-                </div>
-                <div class="input-container">
-                    <input class="input-field" type="date" placeholder="tanggal selesai">
-                </div>
-                <!-- <button class="button-gray" style="width: fit-content;"><img src="/img/download-cloud.svg" alt="">download</button> -->
-            </div>
-        </div>
         <!-- TABLE -->
         <div class="col-md-12">
             <div class="col-md-12">

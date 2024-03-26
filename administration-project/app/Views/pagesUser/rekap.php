@@ -13,11 +13,14 @@
                     <input class="input-field" type="text" placeholder="Search">
                 </div>
                 <button class="button-down">PDF</button>
-                <div class="input-container">
-                    <input class="input-field" type="date"  placeholder="Tanggal Mulai">
-                </div>
-                <div class="input-container">
-                    <input class="input-field" type="date" placeholder="Tanggal Selesai">
+                <div class="row">
+                    <div class="col">
+                        <form method="post" class="form-date">
+                            <input class="input-container" type="date"  name="tgl_mulai" placeholder="Tanggal Mulai">
+                            <input class="input-container" type="date"  name="tgl_selesai" placeholder="Tanggal Mulai">
+                            <button type="submit" name="filter_tgl">Submit</button>
+                        </form>
+                    </div>
                 </div>
                 <!-- <button class="button-gray" style="width: fit-content;"><img src="/img/download-cloud.svg" alt="">download</button> -->
             </div>
@@ -39,6 +42,19 @@
                     <th>Deskripsi</th>
                     <th class="button-crud"></th>
                   </tr>
+                  <?php
+
+                  if(isset($_POST['filter_tgl'])){
+                    $mulai = $_POST['tgl_mulai'];
+                    $selesai = $_POST['tgl_selesai'];
+
+                    if ($mulai=null || $selesai=null) {
+                        $ambildatalaporan = mysqli_query($daftar,"select * form")#
+                    }
+                    
+                  }
+
+                  ?>
                   <?php $i = 1; ?>
                   <?php foreach ($result as $rs) : ?>
                   <tr>
